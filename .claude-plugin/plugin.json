@@ -1,7 +1,7 @@
 {
   "name": "neonpanel",
-  "version": "1.0.0",
-  "description": "E-commerce intelligence suite for Amazon sellers — 8 specialist agents for operations, supply chain, marketing, accounting, forecasting, and financial analysis.",
+  "version": "1.0.1",
+  "description": "E-commerce intelligence suite for Amazon sellers \u2014 8 specialist agents for operations, supply chain, marketing, accounting, forecasting, and financial analysis.",
   "author": {
     "name": "NeonPanel",
     "url": "https://neonpanel.com"
@@ -10,8 +10,16 @@
   "repository": "https://github.com/neonpanel/agent_builder",
   "license": "proprietary",
   "keywords": [
-    "amazon", "ecommerce", "seller", "supply-chain", "inventory",
-    "accounting", "forecasting", "marketing", "analytics", "brand-analytics"
+    "amazon",
+    "ecommerce",
+    "seller",
+    "supply-chain",
+    "inventory",
+    "accounting",
+    "forecasting",
+    "marketing",
+    "analytics",
+    "brand-analytics"
   ],
   "category": "data-analysis"
 }
