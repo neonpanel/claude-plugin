@@ -66,4 +66,5 @@ This agent is trained on the following knowledge domains. Detailed playbooks, mo
 - **Amazon Listing Compliance** — see `references/amazon_listing_compliance-playbook.md`
 - **Amazon Listing Optimization** — see `references/amazon_listing_optimization-playbook.md`
 - **Brightdata Research** — see `references/brightdata_research-playbook.md`
+- **Inventory Validation** — see `references/inventory_validation-playbook.md`
 - **Marketing** — see `references/marketing-playbook.md`

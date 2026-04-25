@@ -22,11 +22,29 @@ Connected to NeonPanel's MCP server at `https://mcp.neonpanel.com/mcp` (OAuth2).
 Provides 66 tools across: brand analytics, financials, forecasting, supply chain,
 inventory, COGS, advertising, imports, Shopify, and account management.
 
-## Setup
+## Install
 
-1. Install plugin in Claude Cowork (Settings > Plugins > Upload)
-2. Connect your NeonPanel account (OAuth2 authorization prompt on first tool use)
-3. Skills activate automatically when your query matches their specialty
+In Claude Code, install directly from this repository:
+
+```shell
+/plugin marketplace add neonpanel/claude-plugin
+```
+
+Then connect your NeonPanel account when Claude prompts for OAuth on first tool use.
+Skills activate automatically when your query matches their specialty.
+
+After installing, ask Claude:
+
+```text
+Help me set up NeonPanel.
+```
+
+Claude will guide you through account readiness, Amazon/Shopify integrations,
+and the two MCP connectors:
+
+- NeonPanel MCP (`https://mcp.neonpanel.com/mcp`) for commerce operations data.
+- NeonaSphera MCP (`https://admin.neonasphera.com/mcp`) for Shared Workspace,
+  memory, and file-memory workflows.
 
 ## How It Works
 

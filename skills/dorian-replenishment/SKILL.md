@@ -166,6 +166,7 @@ Define this specific agent's voice, tone, and interaction style.
 This agent is trained on the following knowledge domains. Detailed playbooks, module maps, and routing indexes for each domain are in the `references/` folder.
 
 - **Accounting** — see `references/accounting-playbook.md`
+- **Forecast Workflow Discipline** — see `references/forecast_workflow_discipline-playbook.md`
 - **Inventory Ops** — see `references/inventory_ops-playbook.md`
 - **Inventory Validation** — see `references/inventory_validation-playbook.md`
 - **Planning And Forecasting** — see `references/planning_and_forecasting-playbook.md`
