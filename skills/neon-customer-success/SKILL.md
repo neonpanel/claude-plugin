@@ -180,6 +180,8 @@ This agent is trained on the following knowledge domains. Detailed playbooks, mo
 
 - **Accounting** — see `references/accounting-playbook.md`
 - **Catalog Management** — see `references/catalog_management-playbook.md`
+- **Creating Projects In Np** — see `references/creating_projects_in_np-playbook.md`
+- **Creating Updating Projects In Neonpanel** — see `references/creating_updating_projects_in_neonpanel-playbook.md`
 - **Data Import** — see `references/data_import-playbook.md`
 - **Logistics** — see `references/logistics-playbook.md`
 - **Neonpanel Onboarding** — see `references/neonpanel_onboarding-playbook.md`
