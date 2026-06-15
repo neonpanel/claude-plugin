@@ -1,0 +1,16 @@
+{
+  "name": "neonpanel",
+  "owner": {
+    "name": "NeonPanel"
+  },
+  "plugins": [
+    {
+      "name": "neonpanel",
+      "source": {
+        "source": "github",
+        "repo": "neonpanel/claude-plugin"
+      },
+      "description": "E-commerce intelligence suite for Amazon sellers \u2014 8 specialist agents for operations, supply chain, marketing, accounting, forecasting, and financial analysis."
+    }
+  ]
+}

@@ -24,27 +24,51 @@ inventory, COGS, advertising, imports, Shopify, and account management.
 
 ## Install
 
-In Claude Code, install directly from this repository:
+This plugin is available three ways. All of them install the same package.
+
+### Claude Code (CLI or the Code tab in Desktop)
+
+Install from the public community marketplace:
+
+```shell
+/plugin marketplace add anthropics/claude-plugins-community
+/plugin install neonpanel@claude-community
+```
+
+Or from this repository directly (branded marketplace):
 
 ```shell
 /plugin marketplace add neonpanel/claude-plugin
+/plugin install neonpanel@neonpanel
 ```
 
-Then connect your NeonPanel account when Claude prompts for OAuth on first tool use.
-Skills activate automatically when your query matches their specialty.
+### Claude Cowork (Desktop)
 
-After installing, ask Claude:
+Cowork has its own plugin manager and does not read Claude Code installs.
+Open **Customize → Plugins → Add marketplace**, enter `neonpanel/claude-plugin`
+(or `anthropics/claude-plugins-community`), then install **neonpanel**.
+
+### Then set up
+
+Connect your NeonPanel account when Claude prompts for OAuth on first tool use.
+Skills activate automatically when your query matches their specialty. Ask Claude:
 
 ```text
 Help me set up NeonPanel.
 ```
 
-Claude will guide you through account readiness, Amazon/Shopify integrations,
-and the two MCP connectors:
+Claude will guide you through account readiness, Amazon/Shopify integrations, and
+the two MCP connectors, which are set up differently:
 
-- NeonPanel MCP (`https://mcp.neonpanel.com/mcp`) for commerce operations data.
-- NeonaSphera MCP (`https://admin.neonasphera.com/mcp`) for Shared Workspace,
-  memory, and file-memory workflows.
+- NeonPanel MCP (`https://mcp.neonpanel.com/mcp`) — bundled with this plugin and
+  configured automatically on install.
+- NeonaSphera MCP (`https://admin.neonasphera.com/mcp`) — optional; added manually
+  via Add Custom Connector (the onboarding skill walks you through it) for Shared
+  Workspace, memory, and file-memory workflows. It is not auto-installed.
+
+> Note: plugins are supported in Claude Code and Cowork, but not in Claude Chat.
+> To use NeonPanel from Chat (claude.ai), add the NeonPanel MCP server as a custom
+> connector instead.
 
 ## How It Works
 
