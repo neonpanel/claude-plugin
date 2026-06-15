@@ -4,11 +4,12 @@
   "description": "E-commerce intelligence suite for Amazon sellers \u2014 8 specialist agents for operations, supply chain, marketing, accounting, forecasting, and financial analysis.",
   "author": {
     "name": "NeonPanel",
+    "email": "michael.sorochev@neonpanel.com",
     "url": "https://neonpanel.com"
   },
   "homepage": "https://neonpanel.com",
   "repository": "https://github.com/neonpanel/claude-plugin",
-  "license": "proprietary",
+  "license": "MIT",
   "keywords": [
     "amazon",
     "ecommerce",

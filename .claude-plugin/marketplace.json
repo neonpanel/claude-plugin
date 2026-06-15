@@ -1,7 +1,8 @@
 {
   "name": "neonpanel",
   "owner": {
-    "name": "NeonPanel"
+    "name": "NeonPanel",
+    "email": "michael.sorochev@neonpanel.com"
   },
   "plugins": [
     {
