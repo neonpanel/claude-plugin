@@ -48,6 +48,16 @@ Cowork has its own plugin manager and does not read Claude Code installs.
 Open **Customize → Plugins → Add marketplace**, enter `neonpanel/claude-plugin`
 (or `anthropics/claude-plugins-community`), then install **neonpanel**.
 
+### For organizations (admins)
+
+Claude's org marketplace ("Sync from GitHub") only accepts private/internal
+repositories, so the plugin is also mirrored to a private repo. In Claude
+Desktop org settings → **Plugins → Create marketplace → Sync from GitHub**,
+select `neonpanel/claude-plugin-private`, enable **Sync automatically**, and
+set **Default access**. Members then get the plugin (and every update) without
+adding a marketplace themselves. The private mirror is published from the same
+release as the public repo, so both always carry the same version.
+
 ### Then set up
 
 Connect your NeonPanel account when Claude prompts for OAuth on first tool use.
