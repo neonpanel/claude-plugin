@@ -2,6 +2,8 @@
 
 ## The mandatory first steps before creating or updating any NeonPanel project document
 
+What it is The mandatory first steps before creating or updating any NeonPanel project document. ALWAYS resolve all entity IDs (vendorid, customerid, warehouseid, inventoryid, serviceid, saleschanneli
+
 **What it is**
 
 The mandatory first steps before creating or updating any NeonPanel project document. ALWAYS resolve all entity IDs (vendor_id, customer_id, warehouse_id, inventory_id, service_id, sales_channel_id) using the appropriate list/search tools BEFORE calling any create or update tool. Never pass user-provided strings directly as IDs — they must be resolved to actual system IDs first.
@@ -60,12 +62,16 @@ The mandatory first steps before creating or updating any NeonPanel project docu
 
 ## Payload Formatting Rules
 
+Procedure Nested arrays (items, documents, details) must be proper JSON arrays of objects, NOT stringified JSON. Passing a string will trigger an invalid_type error. Nested array formatting: Always pa
+
 **Procedure**
 
 1. **Nested arrays** (`items`, `documents`, `details`) must be proper JSON arrays of objects, NOT stringified JSON. Passing a string will trigger an `invalid_type` error.
 2. **Nested array formatting**: Always pass arrays directly, never as strings. This applies to all document types.
 
 ## Creating a Shipment
+
+Procedure Complete the Pre-Creation Checklist above. Resolve originwarehouseid and destinationwarehouseid using inventorylistwarehouses. Resolve origininventoryid for each line item using inventorylis
 
 ### Procedure
 
@@ -81,6 +87,8 @@ The mandatory first steps before creating or updating any NeonPanel project docu
 5. Call `project_management_create_shipment`.
 
 ## Creating an Invoice
+
+Procedure Complete the Pre-Creation Checklist above. Resolve customerid, warehouseid, and saleschannelid. Resolve inventoryid and/or serviceid for each line item. Build the payload: name: descriptive
 
 ### Procedure
 
@@ -101,6 +109,8 @@ The mandatory first steps before creating or updating any NeonPanel project docu
 
 ## Creating an Adjustment
 
+Procedure Complete the Pre-Creation Checklist above. Resolve warehouseid using inventorylistwarehouses. Resolve inventoryid and/or serviceid for each line item using inventorylistitems / projectmanage
+
 ### Procedure
 
 1. Complete the Pre-Creation Checklist above.
@@ -118,6 +128,8 @@ The mandatory first steps before creating or updating any NeonPanel project docu
 5. Call `project_management_create_adjustment`.
 
 ## Strict formatting and validation rules for NeonPanel project document payloads, including JSON array formatting, shipment method constraints, and proper payload structure
+
+What it is Strict formatting and validation rules for NeonPanel project document payloads, including JSON array formatting, shipment method constraints, and proper payload structure. Key objects shipm
 
 **What it is**
 
@@ -162,6 +174,8 @@ Strict formatting and validation rules for NeonPanel project document payloads, 
 
 ## Verified Facts
 
+Facts When creating or updating shipments, the shipmentmethod field strictly accepts only 'LTL', 'FTL', or 'SPD'. For shipments (items), bills (documents), and invoices (details), the payload must be
+
 ### Facts
 
 - When creating or updating shipments, the shipment_method field strictly accepts only 'LTL', 'FTL', or 'SPD'.
@@ -176,6 +190,8 @@ Strict formatting and validation rules for NeonPanel project document payloads, 
 - The ref_number field should use the short code provided by the user (e.g., 'INV-100', 'PO-250'). The name field is separate and must contain a descriptive title.
 
 ## Field Population Rules (ALL Document Types)
+
+Rules for populating a document payload: never blank the name or reference, set currency and market explicitly, use the right pricing key per type, and never default a date that asserts an event.
 
 ### Procedure
 
@@ -229,6 +245,8 @@ was placed with the vendor, and may be defaulted.
 - Do not treat a date appearing in an example as a real value.
 
 ## Mandatory field-population rules for all NeonPanel project document types
+
+What it is Mandatory field-population rules for all NeonPanel project document types. When creating any document (Bill, Invoice, Inventory Order, Shipment, Adjustment), ALL highly recommended fields m
 
 **What it is**
 
@@ -304,6 +322,8 @@ Mandatory field-population rules for all NeonPanel project document types. When 
 
 ## Creating a Bill
 
+Resolve vendor, service and payment term IDs, link any source documents, then build the payload using the rate pricing key and call project_management_create_bill.
+
 ### Procedure
 
 1. Complete the Pre-Creation Checklist above.
@@ -323,6 +343,8 @@ Mandatory field-population rules for all NeonPanel project document types. When 
 7. Call `project_management_create_bill`.
 
 ## Creating an Inventory Order (Purchase Order)
+
+Resolve vendor, warehouse, inventory and optional payment term IDs, then build the payload. The order carries two distinct dates — one may be defaulted, one must never be.
 
 ### Procedure
 
@@ -383,6 +405,8 @@ no or unknown, leave it null deliberately and say so, so they know to set it lat
 
 ## Updating a document — the three replace traps
 
+Updates are a sparse patch, but details is a full replace that deletes unlisted line items, ref_number is silently ignored, and payment_term_id re-syncs the whole installment schedule.
+
 ### What it is
 
 Updating a NeonPanel document is a sparse patch — fields you omit keep their current
@@ -441,6 +465,8 @@ to try to fix one installment; it will not do what you want and may delete other
   (validation failure) — name the field rather than retrying.
 
 ## Pre-Creation Checklist (ALL Document Types)
+
+Before creating any document, identify the type and resolve every entity ID with the list tools. Never pass a raw name string where the API expects an ID — it fails.
 
 ### Procedure
 

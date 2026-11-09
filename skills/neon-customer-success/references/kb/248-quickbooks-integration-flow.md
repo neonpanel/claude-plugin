@@ -1,0 +1,13 @@
+# QuickBooks Integration Flow
+
+Category: QuickBooks Integration · Article 248 · Updated 2026-02-25
+
+The integration between NeonPanel and Quickbooks Online enables a two-way flow of data, including catalogs, bills, invoices, COGS. This allows your business to have a single source of truth for your accounting data.
+
+## Introduction (Part 1)
+
+The integration between NeonPanel and QuickBooks Online allows for a seamless flow of data between the two platforms. The integration is two-way, meaning that data can be imported from QuickBooks Online into NeonPanel and exported from NeonPanel to QuickBooks Online. Users have the ability to switch the synchronization of various items on and off and can set the start date for the synchronization to begin. Learn more in QuickBooks Online Settings article. As part of the onboarding process, NeonPanel creates a Service Item list in the Services Catalog which includes all Amazon services and landed cost services. When a user connects their bookkeeping account, they can choose to use NeonPanel's standard Chart of Accounts or their own chart of accounts from the bookkeeping software. If you choose to continue using your own Chart of Accounts, we will need to create a Transaction Map. The following items are then synchronized: Catalogs, including Products, Services, Customers, Vendors, and Currency. Catalogs, including Products, Services, Customers, Vendors, and Currency. The Chart of Accounts, which can be customized or used with the templated Chart of Accounts adapted for Amazon Sellers. The Chart of Accounts, which can be customized or used with the templated Chart of Accounts adapted for Amazon Sellers. Bills, including Purchasing Orders and Expenses, which are synced in real-time.this feature is only available, if you have an Essentials QuickBooks Online subscription or higher Bills, including Purchasing Orders and Expenses, which are synced in real-time. this feature is only available, if you have an
+
+## Introduction (Part 2)
+
+Essentials QuickBooks Online subscription or higher Invoices, which are synced along with the Cost of Goods Sold (COGS) calculated using the First-In, First-Out (FIFO) method and recorded as a Journal Entry document. Invoices, which are synced along with the Cost of Goods Sold (COGS) calculated using the First-In, First-Out (FIFO) method and recorded as a Journal Entry document. In addition, NeonPanel offers multi-warehouse inventory management with fully automatic landed cost calculation and imports Amazon Statements to create invoices and calculate COGS, which can then be exported to QuickBooks Online.

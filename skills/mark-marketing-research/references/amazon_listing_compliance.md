@@ -2,6 +2,8 @@
 
 ## Generating Compliant Listing Copy from Scratch
 
+Procedure Confirm the target marketplace (US, UK, EU, etc.) to determine unit and formatting standards. Run the Tools-First Data Retrieval playbook — pull all available product data, competitor info,
+
 **Procedure**
 
 1. Confirm the target marketplace (US, UK, EU, etc.) to determine unit and formatting standards.
@@ -16,6 +18,8 @@
 10. Present the validated copy to the user with a note confirming compliance checks passed and unit conversions verified.
 
 ## Unit Conversions
+
+Clarifying questions Which unit types are you converting (weight, volume, dimensions)? Which marketplace are you targeting — this affects whether metric or imperial is primary? How to help Provide the
 
 **Clarifying questions**
 
@@ -39,6 +43,8 @@
 - Conversion discrepancy could lead to customer complaints or returns (e.g., significant size/weight difference)
 
 ## Tools-First Data Retrieval (MANDATORY — Run Before Asking Any Questions)
+
+Procedure Before composing ANY question to the user, run through this checklist to determine if the data can be retrieved via tools instead. Step 1: Identify What You Need List every data point requir
 
 ### Procedure
 
@@ -78,6 +84,8 @@ Before composing ANY question to the user, run through this checklist to determi
 
 ## The self-validation checklist the agent must run against all generated listing copy before presenting it to the user
 
+What it is The self-validation checklist the agent must run against all generated listing copy before presenting it to the user. Covers every known compliance rule including a mandatory unit conversio
+
 **What it is**
 
 The self-validation checklist the agent must run against all generated listing copy before presenting it to the user. Covers every known compliance rule including a mandatory unit conversion verification step to catch errors before the user sees them.
@@ -108,6 +116,8 @@ The self-validation checklist the agent must run against all generated listing c
 
 ## Formatting Rules
 
+Clarifying questions Which listing field are you formatting — title, bullets, or description? Are you listing on a specific Amazon marketplace (US, UK, EU)? Is this for a new listing or updating an ex
+
 **Clarifying questions**
 
 - Which listing field are you formatting — title, bullets, or description?
@@ -131,6 +141,8 @@ The self-validation checklist the agent must run against all generated listing c
 
 ## Handling Compliance Violations Found During Review
 
+Procedure Identify the specific violation and which rule it breaks. Flag it clearly to the user with the original text and the rule violated. Provide a corrected alternative that preserves the marketi
+
 **Procedure**
 
 1. Identify the specific violation and which rule it breaks.
@@ -140,6 +152,8 @@ The self-validation checklist the agent must run against all generated listing c
 5. After corrections, re-run the full checklist to confirm no new violations were introduced.
 
 ## Unit Conversion Validation
+
+Clarifying questions Which listing fields contain unit values you'd like validated? Are you checking conversions between specific unit systems (metric ↔ imperial)? Is this for a single product or a bu
 
 **Clarifying questions**
 
@@ -204,6 +218,8 @@ Run this procedure for EVERY unit conversion that appears in listing copy. Never
 
 ## Prohibited Content
 
+Clarifying questions What type of content are you unsure about — health claims, competitor mentions, or something else? Which product category does this apply to? How to help Identify whether the cont
+
 **Clarifying questions**
 
 - What type of content are you unsure about — health claims, competitor mentions, or something else?
@@ -228,6 +244,8 @@ Run this procedure for EVERY unit conversion that appears in listing copy. Never
 - Content involves potential legal liability (health/safety claims, regulated substances)
 
 ## Verified Facts
+
+Facts ALL CAPS text is prohibited in Amazon bullet points — even for headers or emphasis. Use sentence case or title case instead. Price mentions are prohibited in Amazon bullet points because prices
 
 **Facts**
 
@@ -255,6 +273,8 @@ Run this procedure for EVERY unit conversion that appears in listing copy. Never
 - The agent must always attempt to retrieve data using available MCP tools (NeonPanel, BrightData) before asking the user for information. Users should only be asked for data that genuinely cannot be retrieved via tools, such as internal business decisions, strategy preferences, or data not tracked in connected systems.
 
 ## Listing Copy Compliance
+
+Clarifying questions Which marketplace is this listing for (US, UK, EU, etc.)? What product category does this listing belong to? Are you writing a new listing or reviewing an existing one for complia
 
 **Clarifying questions**
 
@@ -291,6 +311,8 @@ Run this procedure for EVERY unit conversion that appears in listing copy. Never
 
 ## Ensuring factual accuracy in listing copy for the target marketplace — correct unit conversions (metric vs imperial), marketplace-appropriate measurements, and avoiding cross-product references
 
+What it is Ensuring factual accuracy in listing copy for the target marketplace — correct unit conversions (metric vs imperial), marketplace-appropriate measurements, and avoiding cross-product refere
+
 **What it is**
 
 Ensuring factual accuracy in listing copy for the target marketplace — correct unit conversions (metric vs imperial), marketplace-appropriate measurements, and avoiding cross-product references. Includes a mandatory unit conversion validation step with reference conversion factors and reverse-check verification to prevent errors like stating 0.2 inches = 2mm.
@@ -326,6 +348,8 @@ Ensuring factual accuracy in listing copy for the target marketplace — correct
 
 ## Amazon's Content Policy rules that govern what can and cannot appear in product listing copy — titles, bullet points, and descriptions
 
+What it is Amazon's Content Policy rules that govern what can and cannot appear in product listing copy — titles, bullet points, and descriptions. Covers prohibited content types such as pricing, revi
+
 **What it is**
 
 Amazon's Content Policy rules that govern what can and cannot appear in product listing copy — titles, bullet points, and descriptions. Covers prohibited content types such as pricing, reviews, promotional claims, ALL CAPS formatting, and cross-product references.
@@ -355,6 +379,8 @@ Amazon's Content Policy rules that govern what can and cannot appear in product 
 
 ## Prohibited Content Quick-Check (Mandatory Pre-Output Gate)
 
+Procedure Run this check on ALL generated listing copy BEFORE presenting it to the user. This is a mandatory gate — copy must not be shown until it passes. Price Scan Search for: dollar signs ($), cen
+
 ### Procedure
 
 Run this check on ALL generated listing copy BEFORE presenting it to the user. This is a mandatory gate — copy must not be shown until it passes.
@@ -383,6 +409,8 @@ Run this check on ALL generated listing copy BEFORE presenting it to the user. T
 
 ## Pre-Submission Compliance Checklist
 
+Procedure Run this checklist against ALL generated listing copy before presenting it to the user. Every item must pass. Prohibited Content Quick-Check (MANDATORY FIRST STEP) — Run the Prohibited Conte
+
 **Procedure**
 
 Run this checklist against ALL generated listing copy before presenting it to the user. Every item must pass.
@@ -400,6 +428,8 @@ Run this checklist against ALL generated listing copy before presenting it to th
 11. **Title format** — Confirm the title contains: Brand + Key Feature + Product Type + Size/Quantity. No promotional language, no ALL CAPS (except brand names that are officially capitalized).
 
 ## Compliance Check
+
+Clarifying questions Would you like me to check a specific listing field (title, bullets, description) or the full listing? Do you have the ASIN or product category for context? How to help Run a comp
 
 **Clarifying questions**
 

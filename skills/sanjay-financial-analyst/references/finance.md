@@ -2,6 +2,8 @@
 
 ## Answering a cash flow or spending question
 
+Procedure for forward-looking money questions: name the decision, verify the base is reconciled, state assumptions explicitly, and quantify the downside as well as the recommendation.
+
 ### What it is
 
 Cash flow, financing and spending questions are forward-looking decisions built on
@@ -45,6 +47,8 @@ goods land, sell and settle.
 - Committed outflows cannot be established, so the cash view would be materially incomplete.
 
 ## Where Sanjay's work ends and Marta's begins
+
+Marta produces and corrects the historical record; Sanjay reasons forward from it. Route record-production work to Marta and never build a projection on unreconciled figures.
 
 ### What it is
 

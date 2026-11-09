@@ -2,6 +2,8 @@
 
 ## Verifying warehouse identity and type: detecting warehouse clones (same name, different IDs), distinguishing AWD from FBA, and confirming warehouse types (FBA, AWD, 3PL, own)
 
+What it is Verifying warehouse identity and type: detecting warehouse clones (same name, different IDs), distinguishing AWD from FBA, and confirming warehouse types (FBA, AWD, 3PL, own). Key objects W
+
 **What it is**
 
 Verifying warehouse identity and type: detecting warehouse clones (same name, different IDs), distinguishing AWD from FBA, and confirming warehouse types (FBA, AWD, 3PL, own).
@@ -29,6 +31,8 @@ Verifying warehouse identity and type: detecting warehouse clones (same name, di
 
 ## Verify Planning Config
 
+How to help For each SKU, check: leadtimedays (SKU-level or company default), safetystockdays (SKU-level or company default), forecast scenario assignment, planningbase status (actively sold) Use supp
+
 **How to help**
 
 - For each SKU, check: lead_time_days (SKU-level or company default), safety_stock_days (SKU-level or company default), forecast scenario assignment, planning_base status (actively sold)
@@ -50,6 +54,8 @@ Verifying warehouse identity and type: detecting warehouse clones (same name, di
 - Forecast scenario doesn't exist in NeonPanel
 
 ## Warehouse Clone Detection
+
+Procedure Run neonpanel_listWarehouses for the company. Group warehouses by name. If any name appears more than once with different IDs, flag as potential clone: Identify all AWD warehouses and flag t
 
 **Procedure**
 
@@ -74,6 +80,8 @@ Verifying warehouse identity and type: detecting warehouse clones (same name, di
 
 ## Inventory Position Analysis
 
+Procedure For each validated SKU (including orphaned variants found via product family), compile the full inventory position: FBA Available: Current sellable stock in FBA warehouses. Inbound: Units in
+
 **Procedure**
 
 1. For each validated SKU (including orphaned variants found via product family), compile the full inventory position:
@@ -92,6 +100,8 @@ Verifying warehouse identity and type: detecting warehouse clones (same name, di
 9. Note: WIP orders should NOT be counted as available stock but are part of total coverage for planning purposes.
 
 ## Verified Facts
+
+Facts A parent ASIN may map to multiple child ASINs and SKUs. Always resolve to specific SKUs before running any inventory or planning analysis. SKU lookup must specify both company ID and marketplace
 
 **Facts**
 
@@ -115,6 +125,8 @@ Verifying warehouse identity and type: detecting warehouse clones (same name, di
 - When a parent ASIN query returns fewer SKUs than expected, always cross-check by product_family before concluding the family is complete.
 
 ## Verifying that all required planning configuration exists for a SKU: lead time, safety stock, forecast scenario assignment, planning status (actively sold), and vendor/MOQ settings
+
+What it is Verifying that all required planning configuration exists for a SKU: lead time, safety stock, forecast scenario assignment, planning status (actively sold), and vendor/MOQ settings. Key obj
 
 **What it is**
 
@@ -144,6 +156,8 @@ Verifying that all required planning configuration exists for a SKU: lead time, 
 
 ## Planning Configuration Verification
 
+Procedure For each SKU in scope (including any orphaned variants found via product family cross-check), check these four configuration items: Lead time: Run supplychainlistproductlogisticsparameters.
+
 **Procedure**
 
 1. For each SKU in scope (including any orphaned variants found via product family cross-check), check these four configuration items:
@@ -163,6 +177,8 @@ Verifying that all required planning configuration exists for a SKU: lead time, 
 7. If any SKU has ❌ items, flag it as not ready for planning and provide resolution steps.
 
 ## Resolve Sku Identifier
+
+Clarifying questions Is that a parent ASIN, child ASIN, SKU code, or product family name? Which marketplace — US, UK, or another? How to help Use neonpanel_listInventoryItems with the identifier and c
 
 **Clarifying questions**
 
@@ -188,6 +204,8 @@ Verifying that all required planning configuration exists for a SKU: lead time, 
 - Same SKU code exists in multiple marketplaces with different data
 
 ## Resolving product identifiers to specific SKUs: handling parent ASINs (which map to multiple children), child ASINs, SKU codes, and product family names
+
+What it is Resolving product identifiers to specific SKUs: handling parent ASINs (which map to multiple children), child ASINs, SKU codes, and product family names. Confirming the correct marketplace.
 
 **What it is**
 
@@ -217,6 +235,8 @@ Resolving product identifiers to specific SKUs: handling parent ASINs (which map
 
 ## Parent Asin Direct Lookup
 
+Clarifying questions Which marketplace should I use for this parent ASIN? Should I include all child SKUs or specific ones? How to help Trust the user's identifier — do NOT call neonpanellistInventory
+
 **Clarifying questions**
 
 - Which marketplace should I use for this parent ASIN?
@@ -240,6 +260,8 @@ Resolving product identifiers to specific SKUs: handling parent ASINs (which map
 - Supply chain tools return no results for a confirmed parent ASIN
 
 ## Verify Warehouses
+
+Clarifying questions Which company should I check warehouses for? How to help Use neonpanel_listWarehouses to get full warehouse list Check for warehouse clones: same name but different IDs Identify w
 
 **Clarifying questions**
 
@@ -266,6 +288,8 @@ Resolving product identifiers to specific SKUs: handling parent ASINs (which map
 - Warehouse type is ambiguous or unlabeled
 
 ## SKU Identifier Resolution
+
+Procedure Determine the identifier type: parent ASIN, child ASIN, SKU code, or product family name. Confirm the marketplace (US, UK, EU, etc.) and company ID. If parent ASIN: Do NOT call neonpanellist
 
 **Procedure**
 

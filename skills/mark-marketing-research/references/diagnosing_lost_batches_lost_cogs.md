@@ -2,6 +2,8 @@
 
 ## Reference for which NeonPanel tools and reports to use during diagnosis: FIFO Transactions report (COGS Quality, Lost Batches, Transaction List tabs), cogs_analyze_fifo_cogs tool, Statement Analytics, Landed Cost Analysis, Inventory Audit, and search_neonpanel_project_url
 
+What it is Reference for which NeonPanel tools and reports to use during diagnosis: FIFO Transactions report (COGS Quality, Lost Batches, Transaction List tabs), cogsanalyzefifocogs tool, Statement An
+
 **What it is**
 
 Reference for which NeonPanel tools and reports to use during diagnosis: FIFO Transactions report (COGS Quality, Lost Batches, Transaction List tabs), cogs_analyze_fifo_cogs tool, Statement Analytics, Landed Cost Analysis, Inventory Audit, and search_neonpanel_project_url.
@@ -31,6 +33,8 @@ Reference for which NeonPanel tools and reports to use during diagnosis: FIFO Tr
 - Not knowing that Statement Analytics shows liquidations, removals, and adjustments
 
 ## Core concepts: what lost batches are (FIFO engine couldn't assign a source batch for outbound units), what lost COGS is (lost batches specifically on invoice/sale transactions resulting in $0 COGS), why FIFO is per-warehouse, and how same-date transaction priority works
+
+What it is Core concepts: what lost batches are (FIFO engine couldn't assign a source batch for outbound units), what lost COGS is (lost batches specifically on invoice/sale transactions resulting in
 
 **What it is**
 
@@ -62,6 +66,8 @@ Core concepts: what lost batches are (FIFO engine couldn't assign a source batch
 
 ## Formulating hypotheses after investigation (date ordering issues, missing POs, missing shipments, wrong warehouse assignments, warehouse clones, onboarding residue, anomalous Amazon adjustments, missing bill connections) and guiding the user toward resolution — prescribing only when evidence is unambiguous
 
+What it is Formulating hypotheses after investigation (date ordering issues, missing POs, missing shipments, wrong warehouse assignments, warehouse clones, onboarding residue, anomalous Amazon adjustm
+
 **What it is**
 
 Formulating hypotheses after investigation (date ordering issues, missing POs, missing shipments, wrong warehouse assignments, warehouse clones, onboarding residue, anomalous Amazon adjustments, missing bill connections) and guiding the user toward resolution — prescribing only when evidence is unambiguous.
@@ -92,6 +98,8 @@ Formulating hypotheses after investigation (date ordering issues, missing POs, m
 - Not recognizing the hard limit — you cannot detect data that was never entered
 
 ## Phase 2 diagnostic: triaging lost batches by aggregate impact, identifying shipment/PO-level patterns, analyzing surrounding transactions (backwards and forwards in time), checking warehouse IDs vs names, spotting volume anomalies, and detecting onboarding residue
+
+What it is Phase 2 diagnostic: triaging lost batches by aggregate impact, identifying shipment/PO-level patterns, analyzing surrounding transactions (backwards and forwards in time), checking warehous
 
 **What it is**
 
@@ -125,6 +133,8 @@ Phase 2 diagnostic: triaging lost batches by aggregate impact, identifying shipm
 
 ## Lost Batch Tools Reference
 
+Clarifying questions What specifically are you trying to investigate — lost COGS, lost batches, or both? How to help For lost COGS: use FIFO Transactions report → COGS Quality tab, or cogsanalyzefifoc
+
 **Clarifying questions**
 
 - What specifically are you trying to investigate — lost COGS, lost batches, or both?
@@ -144,6 +154,8 @@ Phase 2 diagnostic: triaging lost batches by aggregate impact, identifying shipm
 - Do not fabricate report data or tool output
 
 ## Verified Facts
+
+Facts Lost batches are transactions where the FIFO engine could not find or assign a source batch for units being moved — the FIFO queue was empty or no matching inventory existed in the expected ware
 
 **Facts**
 
@@ -173,6 +185,8 @@ Phase 2 diagnostic: triaging lost batches by aggregate impact, identifying shipm
 - The agent should guide the user toward resolution rather than prescribe fixes, except when evidence is unambiguous.
 
 ## Phase 2: Lost Batches General Approach
+
+Procedure Triage — Aggregate view first. Do NOT start with individual SKUs. Pull lost batches data sorted by impact (units or dollar amount, descending). Look for shipment-level or PO-level patterns:
 
 **Procedure**
 
@@ -204,6 +218,8 @@ Phase 2 diagnostic: triaging lost batches by aggregate impact, identifying shipm
 
 ## Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/brand, and applying the Warehouse Fork — checking whether the lost COGS transaction is on Lost & Found (stock never arrived) vs
 
+What it is Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/brand, and applying the Warehouse Fork — checking whether the lost COGS transaction is on Lost & Found (stock
+
 **What it is**
 
 Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/brand, and applying the Warehouse Fork — checking whether the lost COGS transaction is on Lost & Found (stock never arrived) vs. an actual warehouse (stock arrived with $0 cost).
@@ -230,6 +246,8 @@ Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/b
 - Not checking whether stock arrived with $0 cost vs. never arrived at all
 
 ## Lost Batch Hypotheses
+
+Clarifying questions Based on the transaction analysis, which hypothesis seems most likely to you? Do you have access to external records (e.g., supplier POs, shipping confirmations) that could confir
 
 **Clarifying questions**
 
@@ -258,6 +276,8 @@ Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/b
 
 ## Warehouse Fork Analysis
 
+Clarifying questions What warehouse is shown on the lost COGS transaction? Is it showing Lost & Found or an actual warehouse name? How to help If Lost & Found: the stock was not on the selling warehou
+
 **Clarifying questions**
 
 - What warehouse is shown on the lost COGS transaction?
@@ -279,6 +299,8 @@ Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/b
 - Both fork paths lead to the same dead end across multiple SKUs
 
 ## Lost Batches Diagnosis
+
+Clarifying questions Which company and time period are you looking at? Are you seeing lost batches on shipments, invoices, or both? Have you already identified specific SKUs or is this a general conce
 
 **Clarifying questions**
 
@@ -311,6 +333,8 @@ Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/b
 
 ## Transaction Tracing
 
+Clarifying questions Which SKU/inventory ID are you investigating? What date range should I look at for surrounding transactions? How to help Check Lost & Found warehouse transactions for this item Id
+
 **Clarifying questions**
 
 - Which SKU/inventory ID are you investigating?
@@ -338,6 +362,8 @@ Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/b
 
 ## Phase 1: Lost COGS Triage
 
+Procedure Assess overall COGS quality using cogsanalyzefifocogs with analysismode 'lost_cogs'. Ask the user for scope: specific SKU, brand, or entire company. Ask for time period and investigation thr
+
 **Procedure**
 
 1. Assess overall COGS quality using `cogs_analyze_fifo_cogs` with analysis_mode 'lost_cogs'.
@@ -350,6 +376,8 @@ Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/b
 6. The Warehouse Fork prevents misdiagnosis — without it, you might look for why stock didn't arrive when it actually did arrive, just without costs.
 
 ## Lost Cogs Diagnosis
+
+Clarifying questions Do you want to check a specific SKU, brand, or the entire company? What time period are you concerned about? Do you have an investigation threshold — a minimum unit count or dolla
 
 **Clarifying questions**
 
@@ -380,6 +408,8 @@ Phase 1 diagnostic: assessing COGS quality, identifying worst offenders by SKU/b
 - Customer has already attempted fixes that didn't resolve the problem
 
 ## Quick-Reference Decision Flow
+
+Procedure User reports lost COGS → Start Phase 1 (Warehouse Fork). Lost & Found → Stock never arrived → Phase 2. Actual warehouse → Stock arrived with $0 cost → Find inbound shipment → Phase 2 for tha
 
 **Procedure**
 

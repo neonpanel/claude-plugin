@@ -2,6 +2,8 @@
 
 ## Keyword research fundamentals, buyer intent analysis, Amazon search algorithm behavior (A10, Rufus, COSMO), and backend search term optimization
 
+What it is Keyword research fundamentals, buyer intent analysis, Amazon search algorithm behavior (A10, Rufus, COSMO), and backend search term optimization. Covers primary/secondary/long-tail keywords
+
 **What it is**
 
 Keyword research fundamentals, buyer intent analysis, Amazon search algorithm behavior (A10, Rufus, COSMO), and backend search term optimization. Covers primary/secondary/long-tail keywords, search term tools, intent-over-volume strategy, Generic keyword field best practices, prohibited search terms, byte limits, and bulk search term updates.
@@ -49,6 +51,8 @@ Keyword research fundamentals, buyer intent analysis, Amazon search algorithm be
 
 ## Listing Restrictions Prohibited
 
+Clarifying questions Are you asking about a specific content type or the full restrictions list? How to help Provide the relevant prohibited content categories Explain why each restriction exists Sugg
+
 **Clarifying questions**
 
 - Are you asking about a specific content type or the full restrictions list?
@@ -65,6 +69,8 @@ Keyword research fundamentals, buyer intent analysis, Amazon search algorithm be
 - Do not suggest ways to circumvent listing restrictions
 
 ## Image strategy, video content, and A+ Content (Enhanced Brand Content) for Amazon listings
+
+What it is Image strategy, video content, and A+ Content (Enhanced Brand Content) for Amazon listings. Covers hero images, lifestyle shots, infographics, comparison charts, and multimedia engagement.
 
 **What it is**
 
@@ -96,6 +102,8 @@ Image strategy, video content, and A+ Content (Enhanced Brand Content) for Amazo
 
 ## Bullet Point Optimization
 
+Clarifying questions What are the top 3-5 product benefits you want to highlight? Do you have competitor bullets I should benchmark against? How to help Pull competitor bullets via BrightData Draft 5
+
 **Clarifying questions**
 
 - What are the top 3-5 product benefits you want to highlight?
@@ -115,6 +123,8 @@ Image strategy, video content, and A+ Content (Enhanced Brand Content) for Amazo
 
 ## Prohibited Content
 
+Clarifying questions Are you asking about a specific type of content, or do you want the full prohibited list? How to help List the specific prohibited content categories relevant to the question Expl
+
 **Clarifying questions**
 
 - Are you asking about a specific type of content, or do you want the full prohibited list?
@@ -131,6 +141,8 @@ Image strategy, video content, and A+ Content (Enhanced Brand Content) for Amazo
 
 ## Formatting Rules
 
+Clarifying questions Which listing field are you asking about (title, bullets, description, backend)? How to help Explain the formatting rules for the specific field Provide examples of correct vs inc
+
 **Clarifying questions**
 
 - Which listing field are you asking about (title, bullets, description, backend)?
@@ -146,6 +158,8 @@ Image strategy, video content, and A+ Content (Enhanced Brand Content) for Amazo
 - Do not suggest HTML or special characters are allowed in any listing field
 
 ## Pre-submission checklist and validation gates before publishing a listing
+
+What it is Pre-submission checklist and validation gates before publishing a listing. Covers required fields, compliance checks, image validation, and subscription-specific disclosure requirements. Ke
 
 **What it is**
 
@@ -175,6 +189,8 @@ Pre-submission checklist and validation gates before publishing a listing. Cover
 
 ## Compliance Check
 
+Clarifying questions Can you paste the listing copy you want me to review? Is this for a specific marketplace with additional local regulations? How to help Run the full Prohibited Content Quick-Check
+
 **Clarifying questions**
 
 - Can you paste the listing copy you want me to review?
@@ -198,6 +214,8 @@ Pre-submission checklist and validation gates before publishing a listing. Cover
 
 ## Subscribe With Amazon Eligibility
 
+Clarifying questions Is your product a digital or cloud-based subscription service? What type of product are you looking to list? How to help Confirm eligibility — only digital/cloud-based subscriptio
+
 **Clarifying questions**
 
 - Is your product a digital or cloud-based subscription service?
@@ -214,6 +232,8 @@ Pre-submission checklist and validation gates before publishing a listing. Cover
 - Do not suggest physical products can be sold via Subscribe with Amazon
 
 ## Search Term Optimization
+
+Clarifying questions What product type is this? (Some product types require the Generic keyword field) What keywords are already on the front end of your listing? How to help Explain the Generic keywo
 
 **Clarifying questions**
 
@@ -234,6 +254,8 @@ Pre-submission checklist and validation gates before publishing a listing. Cover
 
 ## Optimizing for Mobile Shoppers
 
+Procedure Review the title — only the first 80 characters are visible on mobile. Front-load the most important keywords and benefits. Review bullet points — only the first 2-3 bullets may be visible w
+
 **Procedure**
 
 1. Review the title — only the first 80 characters are visible on mobile. Front-load the most important keywords and benefits.
@@ -243,6 +265,8 @@ Pre-submission checklist and validation gates before publishing a listing. Cover
 5. Test the listing on a mobile device or mobile preview if available.
 
 ## Auto Renewal Disclosures
+
+Clarifying questions What is the renewal term and cost? Where in the listing are the disclosures currently placed? How to help Verify all 4 required disclosures are present: auto-renewal notice, charg
 
 **Clarifying questions**
 
@@ -265,6 +289,8 @@ Pre-submission checklist and validation gates before publishing a listing. Cover
 - Disclosures may not meet legal requirements in specific jurisdictions
 
 ## Listing Copy Compliance
+
+Clarifying questions What product type and category is this listing for? Do you have the target keywords already, or should I research them? Which marketplace (US, UK, EU)? How to help Run Tools-First
 
 **Clarifying questions**
 
@@ -289,6 +315,8 @@ Pre-submission checklist and validation gates before publishing a listing. Cover
 - User insists on including prohibited content like review counts or price references
 
 ## Tools-First Data Retrieval (MANDATORY — Run Before Asking Any Questions)
+
+Procedure Before composing ANY question to the user, run through this checklist to determine if the data can be retrieved via tools instead. Step 1: Identify What You Need List every data point requir
 
 ### Procedure
 
@@ -328,6 +356,8 @@ Before composing ANY question to the user, run through this checklist to determi
 
 ## Keyword Research
 
+Clarifying questions What product category and main product type? Do you have competitor ASINs I should analyze? How to help Use BrightData to research competitor listings and extract their keyword st
+
 **Clarifying questions**
 
 - What product category and main product type?
@@ -346,6 +376,8 @@ Before composing ANY question to the user, run through this checklist to determi
 - Do not recommend keyword stuffing
 
 ## Subscribe with Amazon — Listing Setup
+
+Procedure Verify eligibility — Confirm the product is a digital or cloud-based subscription service. Physical products are not eligible for Subscribe with Amazon. Gather required product information:
 
 ### Procedure
 
@@ -371,6 +403,8 @@ Before composing ANY question to the user, run through this checklist to determi
 
 ## Conversion Optimization
 
+Clarifying questions Do you have current conversion rate and session data? What's your review count and star rating? How to help Diagnose the conversion bottleneck (CTR vs conversion vs sessions) Prio
+
 **Clarifying questions**
 
 - Do you have current conversion rate and session data?
@@ -388,6 +422,8 @@ Before composing ANY question to the user, run through this checklist to determi
 - Do not guarantee specific conversion rate improvements
 
 ## Pre-Submission Compliance Checklist
+
+Procedure Run this checklist against ALL generated listing copy before presenting it to the user. Every item must pass. Prohibited Content Quick-Check (MANDATORY FIRST STEP) — Run the Prohibited Conte
 
 **Procedure**
 
@@ -408,6 +444,8 @@ Run this checklist against ALL generated listing copy before presenting it to th
 
 ## Subscription Listing Requirements
 
+Clarifying questions Do you have all required fields ready (product name, category, subscription length, price, SKU, UPC/EAN/JAN, compatible devices, login types, privacy policy)? How to help Walk thr
+
 **Clarifying questions**
 
 - Do you have all required fields ready (product name, category, subscription length, price, SKU, UPC/EAN/JAN, compatible devices, login types, privacy policy)?
@@ -425,6 +463,8 @@ Run this checklist against ALL generated listing copy before presenting it to th
 
 ## Handling Compliance Violations Found During Review
 
+Procedure Identify the specific violation and which rule it breaks. Flag it clearly to the user with the original text and the rule violated. Provide a corrected alternative that preserves the marketi
+
 **Procedure**
 
 1. Identify the specific violation and which rule it breaks.
@@ -434,6 +474,8 @@ Run this checklist against ALL generated listing copy before presenting it to th
 5. After corrections, re-run the full checklist to confirm no new violations were introduced.
 
 ## Amazon's content policies governing what can and cannot appear in product listings
+
+What it is Amazon's content policies governing what can and cannot appear in product listings. Covers prohibited content types, restricted language, formatting rules, and content quality standards. Ke
 
 **What it is**
 
@@ -462,6 +504,8 @@ Amazon's content policies governing what can and cannot appear in product listin
 
 ## Keyword Research and Integration
 
+Procedure Identify the product category and main product type. Use available tools (Helium 10, Jungle Scout, Brand Analytics) to pull keyword data. Categorize keywords into three tiers: Primary keywor
+
 **Procedure**
 
 1. Identify the product category and main product type.
@@ -480,6 +524,8 @@ Amazon's content policies governing what can and cannot appear in product listin
 
 ## Mobile Optimization
 
+Clarifying questions Have you checked how your listing currently renders on mobile? How to help Review title — only first 80 chars visible on mobile, front-load key info Review bullets — first 2-3 vis
+
 **Clarifying questions**
 
 - Have you checked how your listing currently renders on mobile?
@@ -496,6 +542,8 @@ Amazon's content policies governing what can and cannot appear in product listin
 - Do not ignore mobile — majority of Amazon shoppers browse on mobile
 
 ## Requirements and policies specific to the Subscribe with Amazon program for digital and cloud-based subscription services
+
+What it is Requirements and policies specific to the Subscribe with Amazon program for digital and cloud-based subscription services. Covers eligibility, required product information, auto-renewal dis
 
 **What it is**
 
@@ -530,6 +578,8 @@ Requirements and policies specific to the Subscribe with Amazon program for digi
 
 ## Generating Compliant Listing Copy from Scratch
 
+Procedure Confirm the target marketplace (US, UK, EU, etc.) to determine unit and formatting standards. Run the Tools-First Data Retrieval playbook — pull all available product data, competitor info,
+
 **Procedure**
 
 1. Confirm the target marketplace (US, UK, EU, etc.) to determine unit and formatting standards.
@@ -544,6 +594,8 @@ Requirements and policies specific to the Subscribe with Amazon program for digi
 10. Present the validated copy to the user with a note confirming compliance checks passed and unit conversions verified.
 
 ## Backend Search Terms
+
+Clarifying questions What keywords are already on the front end of your listing? What product category is this? How to help Identify keywords not already used in title, bullets, or description Draft b
 
 **Clarifying questions**
 
@@ -563,6 +615,8 @@ Requirements and policies specific to the Subscribe with Amazon program for digi
 - Do not include brand names or ASINs in search terms
 
 ## Optimizing product titles, bullet points, and descriptions for both Amazon SEO and conversion
+
+What it is Optimizing product titles, bullet points, and descriptions for both Amazon SEO and conversion. Covers title structure, benefit-first writing, mobile formatting, and persuasive copywriting t
 
 **What it is**
 
@@ -591,6 +645,8 @@ Optimizing product titles, bullet points, and descriptions for both Amazon SEO a
 - Ignoring mobile formatting where most shoppers browse
 
 ## Self-Generated Copy Compliance Cross-Check (MANDATORY)
+
+Procedure This playbook applies whenever the agent generates, suggests, or drafts ANY listing copy — titles, bullets, descriptions, A+ Content text, or A/B test variations. The agent must validate its
 
 ### Procedure
 
@@ -625,6 +681,8 @@ The agent must validate its own generated output against the same compliance rul
 
 ## Ensuring factual accuracy in listings: correct unit conversions, truthful product claims, accurate specifications, and marketplace-specific standards
 
+What it is Ensuring factual accuracy in listings: correct unit conversions, truthful product claims, accurate specifications, and marketplace-specific standards. Key objects Unit conversions Product s
+
 **What it is**
 
 Ensuring factual accuracy in listings: correct unit conversions, truthful product claims, accurate specifications, and marketplace-specific standards.
@@ -652,6 +710,8 @@ Ensuring factual accuracy in listings: correct unit conversions, truthful produc
 
 ## Listing Content Restrictions Quick Reference
 
+Procedure Before finalizing any listing, verify that NONE of the following appear in titles, descriptions, bullet points, or images: ✘ Pornographic, obscene, or offensive content ✘ Phone numbers, phys
+
 **Procedure**
 
 Before finalizing any listing, verify that NONE of the following appear in titles, descriptions, bullet points, or images:
@@ -668,6 +728,8 @@ Before finalizing any listing, verify that NONE of the following appear in title
 10. ✘ Multiple products on a single detail page
 
 ## Verified Facts
+
+Facts Amazon's search algorithm emphasizes buyer intent and conversion signals over sheer keyword frequency. Amazon's AI systems (Rufus, COSMO) understand context, not just exact keyword phrases.
 
 ### Facts
 
@@ -733,6 +795,8 @@ Before finalizing any listing, verify that NONE of the following appear in title
 
 ## Unit Conversion Validation
 
+Clarifying questions Can you share the listing copy containing the conversions to validate? How to help Identify every measurement with a unit conversion in the copy Calculate each conversion using ex
+
 **Clarifying questions**
 
 - Can you share the listing copy containing the conversions to validate?
@@ -785,6 +849,8 @@ Run this procedure for EVERY unit conversion that appears in listing copy. Never
 
 ## Prohibited Content Quick-Check (Mandatory Pre-Output Gate)
 
+Procedure Run this check on ALL generated listing copy BEFORE presenting it to the user. This is a mandatory gate — copy must not be shown until it passes. Price Scan Search for: dollar signs ($), cen
+
 ### Procedure
 
 Run this check on ALL generated listing copy BEFORE presenting it to the user. This is a mandatory gate — copy must not be shown until it passes.
@@ -825,6 +891,8 @@ Run this check on ALL generated listing copy BEFORE presenting it to the user. T
 
 ## Listing Performance Review
 
+Procedure Pull current listing performance metrics (CTR, conversion rate, sessions, sales velocity). Compare against category benchmarks if available. Identify weak points: Low CTR → Title or hero ima
+
 **Procedure**
 
 1. Pull current listing performance metrics (CTR, conversion rate, sessions, sales velocity).
@@ -840,6 +908,8 @@ Run this check on ALL generated listing copy BEFORE presenting it to the user. T
 
 ## A+ Content Strategy
 
+Procedure Determine eligibility — A+ Content is available to Brand Registered sellers. Plan the content layout: Hero banner: Brand story or key product benefit Feature blocks: 3-4 key features with im
+
 ### Procedure
 
 1. Determine eligibility — A+ Content is available to Brand Registered sellers.
@@ -853,6 +923,8 @@ Run this check on ALL generated listing copy BEFORE presenting it to the user. T
 5. Submit for Amazon review and monitor for approval.
 
 ## Subscribe with Amazon — Auto-Renewal Disclosures
+
+Procedure If your subscription product auto-renews, the listing must clearly and conspicuously display ALL four of the following disclosures: Auto-renewal notice: "Subscriptions automatically renew un
 
 ### Procedure
 
@@ -871,6 +943,8 @@ If your subscription product auto-renews, the listing must clearly and conspicuo
 
 ## Visual Content Strategy
 
+Clarifying questions Are you Brand Registered (required for A+ Content)? What images do you currently have? How to help Explain the recommended image stack (hero, lifestyle, infographic, size comparis
+
 **Clarifying questions**
 
 - Are you Brand Registered (required for A+ Content)?
@@ -887,6 +961,8 @@ If your subscription product auto-renews, the listing must clearly and conspicuo
 - Do not claim A+ Content directly improves SEO — it improves conversion which indirectly helps rankings
 
 ## Title Optimization
+
+Clarifying questions What's the product type and brand name? Do you have target keywords already? How to help Pull competitor titles via BrightData for benchmarking Draft title using Brand + Key Featu
 
 **Clarifying questions**
 
@@ -905,6 +981,8 @@ If your subscription product auto-renews, the listing must clearly and conspicuo
 - Do not include promotional claims, discount language, or review references in titles
 
 ## Understanding and optimizing Amazon's behavioral ranking signals: click-through rate, conversion rate, add-to-cart actions, session behavior, reviews, external traffic, and A/B testing strategies
+
+What it is Understanding and optimizing Amazon's behavioral ranking signals: click-through rate, conversion rate, add-to-cart actions, session behavior, reviews, external traffic, and A/B testing stra
 
 **What it is**
 
@@ -935,6 +1013,8 @@ Understanding and optimizing Amazon's behavioral ranking signals: click-through 
 - Ignoring external traffic as a ranking signal
 
 ## Unit Conversions
+
+Clarifying questions Which units are you converting (inches/mm, lbs/kg, fl oz/ml)? Which marketplace is the primary target? How to help Look up the exact conversion factor from the reference table Cal
 
 **Clarifying questions**
 

@@ -2,6 +2,8 @@
 
 ## Diagnose Empty Results
 
+Clarifying questions Which tool returned empty results? What SKU/ASIN and company were you querying? How to help Follow the 5-check diagnostic tree in strict order: Check 1: Does the SKU exist in the
+
 **Clarifying questions**
 
 - Which tool returned empty results?
@@ -33,6 +35,8 @@
 
 ## After identifying the root cause via the diagnostic tree, providing clear resolution steps — what the user needs to configure in NeonPanel and what the agent should re-run after
 
+What it is After identifying the root cause via the diagnostic tree, providing clear resolution steps — what the user needs to configure in NeonPanel and what the agent should re-run after. Key object
+
 **What it is**
 
 After identifying the root cause via the diagnostic tree, providing clear resolution steps — what the user needs to configure in NeonPanel and what the agent should re-run after.
@@ -58,6 +62,8 @@ After identifying the root cause via the diagnostic tree, providing clear resolu
 
 ## Verified Facts
 
+Facts When a planning tool returns empty results, follow the 5-check diagnostic tree in strict order: (1) SKU in snapshot, (2) leadtimedays, (3) safetystockdays, (4) forecast scenario, (5) actively so
+
 **Facts**
 
 - When a planning tool returns empty results, follow the 5-check diagnostic tree in strict order: (1) SKU in snapshot, (2) lead_time_days, (3) safety_stock_days, (4) forecast scenario, (5) actively sold flag.
@@ -69,6 +75,8 @@ After identifying the root cause via the diagnostic tree, providing clear resolu
 - The planning_base parameter controls which SKUs are included in PO placement: 'actively_sold_only' includes only active SKUs, 'all' includes all SKUs regardless of status.
 
 ## The 5-check diagnostic decision tree for when supply_chain_list_po_placement_candidates or other planning tools return empty results
+
+What it is The 5-check diagnostic decision tree for when supplychainlistpoplacementcandidates or other planning tools return empty results. Checks: SKU existence → lead time → safety stock → forecast
 
 **What it is**
 
@@ -98,6 +106,8 @@ The 5-check diagnostic decision tree for when supply_chain_list_po_placement_can
 - Not following the tree in order
 
 ## 5-Check Diagnostic Tree
+
+Procedure When a planning tool (especially supplychainlistpoplacementcandidates) returns empty results, follow these 5 checks in strict order. Do NOT skip checks or re-run the original tool. Check 1:
 
 **Procedure**
 
@@ -182,6 +192,8 @@ When a planning tool (especially `supply_chain_list_po_placement_candidates`) re
 
 ## Post-Fix Verification
 
+Procedure After the user reports they've made a configuration change, re-run ONLY the specific check that failed. If the check now passes, offer to re-run the full PO planning workflow from Phase 3 (t
+
 **Procedure**
 
 1. After the user reports they've made a configuration change, re-run ONLY the specific check that failed.
@@ -190,6 +202,8 @@ When a planning tool (especially `supply_chain_list_po_placement_candidates`) re
 4. Do NOT re-run all 5 checks — only verify the one that was fixed.
 
 ## Resolve Root Cause
+
+Clarifying questions Have you made the configuration change in NeonPanel yet? How to help Based on the diagnostic result, provide specific NeonPanel navigation steps to fix the issue For missing lead
 
 **Clarifying questions**
 

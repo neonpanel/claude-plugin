@@ -2,6 +2,8 @@
 
 ## Advertising Analysis
 
+Clarifying questions Do you have PPC campaign data available? What date range for advertising analysis? How to help Pull PPC performance data: search term report, campaign structure, ACOS Identify hig
+
 **Clarifying questions**
 
 - Do you have PPC campaign data available?
@@ -24,6 +26,8 @@
 
 ## Phase 5 — PPC/Advertising Analysis
 
+Procedure Confirm PPC data access with the user. Pull search term report, campaign structure, and ACOS data. Identify high-spend low-conversion terms. Analyze campaign structure for optimization oppor
+
 **Procedure**
 
 1. Confirm PPC data access with the user.
@@ -33,6 +37,8 @@
 5. Save results to phase_results in Supabase.
 
 ## Verified Facts
+
+Facts The Amazon Listing Audit has 10 phases: Phases 1-6 are data collection, Phases 7-10 are strategic analysis. Phase 1 (Product Intelligence): scrape target listing, competitor listings, reviews, a
 
 **Facts**
 
@@ -62,6 +68,8 @@
 
 ## Phase 6 — Cross-sell & Repeat Purchase
 
+Procedure Analyze market basket data for cross-sell opportunities. Check repeat purchase patterns. Evaluate bundle opportunities (Virtual Bundles, Frequently Bought Together). Assess Subscribe & Save
+
 ### Procedure
 
 1. Analyze market basket data for cross-sell opportunities.
@@ -71,6 +79,8 @@
 5. Save results to phase_results in Supabase.
 
 ## Supabase Query Fallback
+
+Clarifying questions What data are you trying to retrieve? Do you know which table it should be in? How to help Follow the Supabase Query Fallback Procedure: verify table existence with list_tables fi
 
 **Clarifying questions**
 
@@ -96,6 +106,8 @@
 
 ## Phase 2 — Search Query Performance (SQP)
 
+Procedure Confirm the user has Brand Analytics access. Pull SQP data: keyword funnel metrics, click share, conversion share. Identify cannibalization between the user's own ASINs. Build the SQP signal
+
 ### Procedure
 
 1. Confirm the user has Brand Analytics access.
@@ -106,6 +118,8 @@
 
 ## Phase 4 — Competitive Landscape
 
+Procedure Identify top 3-5 competitors with the user. Use BrightData to pull competitor listings, pricing, and review data. Run head-to-head comparison on key metrics. Analyze search term momentum — w
+
 ### Procedure
 
 1. Identify top 3-5 competitors with the user.
@@ -115,6 +129,8 @@
 5. Save competitive data to phase_results in Supabase.
 
 ## Synthesis Diagnosis
+
+Clarifying questions Have phases 1-7 been completed? How to help Synthesize findings across all phases into a unified diagnosis Apply the traffic diagnosis framework to identify root causes Categorize
 
 **Clarifying questions**
 
@@ -137,6 +153,8 @@
 
 ## Baseline Measurement
 
+Clarifying questions Which metrics are most important for your business? How to help Capture current baselines: BSR, keyword rankings, conversion rate, sessions, revenue Define the 30-day measurement
+
 **Clarifying questions**
 
 - Which metrics are most important for your business?
@@ -154,6 +172,8 @@
 
 ## Phase 8 — Synthesis & Diagnosis
 
+Procedure Verify phases 1-7 are complete. Synthesize findings across all phases into a unified diagnosis. Apply the traffic diagnosis framework to identify root causes. Categorize issues by type: cont
+
 ### Procedure
 
 1. Verify phases 1-7 are complete.
@@ -163,6 +183,8 @@
 5. Generate the synthesis report with clear cause-effect chains.
 
 ## Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, competitors, SERP), SQP analysis, SCP analysis, Competitive Landscape, PPC/Advertising analysis, and Cross-sell/Repeat Purchase analysis
+
+What it is Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, competitors, SERP), SQP analysis, SCP analysis, Competitive Landscape, PPC/Advertising analysis, and Cross-se
 
 **What it is**
 
@@ -193,6 +215,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 
 ## Start a New Listing Audit
 
+Procedure Confirm the target ASIN and marketplace with the user. Call startaudit() in Supabase to create a new auditrun record. Call initializeauditphases() to set up phase tracking for all 10 phases.
+
 **Procedure**
 
 1. Confirm the target ASIN and marketplace with the user.
@@ -202,6 +226,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 5. Begin Phase 1: Product Intelligence data collection.
 
 ## Competitive Landscape
+
+Clarifying questions Who are the top 3-5 competitors? What primary keywords define your competitive space? How to help Use BrightData to pull competitor listings, pricing, and review data Run head-to-
 
 **Clarifying questions**
 
@@ -221,6 +247,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 
 ## Phase 1 — Product Intelligence
 
+Procedure Use BrightData to scrape the target listing (product details, images, bullets, A+ content). Scrape competitor listings identified from search results (top 3-5). Pull review data for the targ
+
 ### Procedure
 
 1. Use BrightData to scrape the target listing (product details, images, bullets, A+ content).
@@ -230,6 +258,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 5. Save all results to phase_results in Supabase with the audit_run_id.
 
 ## Parallel Execution
+
+Clarifying questions How many parallel chat sessions can you run? Which phases do you want to run in parallel? How to help Recommend phase groupings for parallel execution Ensure all parallel results
 
 **Clarifying questions**
 
@@ -247,6 +277,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 - Do not start analysis phases in parallel with data collection phases
 
 ## Product Intelligence
+
+Clarifying questions What ASIN should I scrape? Which marketplace? Who are the top 3-5 competitors? How to help Use BrightData to scrape the target listing Scrape competitor listings Pull review data
 
 **Clarifying questions**
 
@@ -272,6 +304,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 
 ## Phase 3 — Search Catalog Performance (SCP)
 
+Procedure Pull Search Catalog Performance data for the target ASIN (and variations if applicable). Identify problem child ASINs (underperforming variations). Calculate catalog-level KPIs. Save results
+
 ### Procedure
 
 1. Pull Search Catalog Performance data for the target ASIN (and variations if applicable).
@@ -280,6 +314,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 4. Save results to phase_results in Supabase.
 
 ## Phase 9 — Prioritized Action Plan
+
+Procedure List all recommended actions from the synthesis. Score each action using Impact × Ease × Revenue Exposure (max 125). Tier actions: Tier 1 (score 80+, do immediately), Tier 2 (40-79, schedule
 
 ### Procedure
 
@@ -290,6 +326,8 @@ Phases 1-6 of the listing audit: Product Intelligence (scrape listing, reviews, 
 5. Present the prioritized action plan with expected outcomes.
 
 ## Supabase-backed audit execution: tables (audit_runs, phase_results, audit_findings, audit_actions, audit_baselines), functions (start_audit(), initialize_audit_phases()), and the mandatory Supabase Query Fallback Procedure (2-attempt maximum with diagnostic steps between attempts)
+
+What it is Supabase-backed audit execution: tables (auditruns, phaseresults, auditfindings, auditactions, auditbaselines), functions (startaudit(), initializeauditphases()), and the mandatory Supabase
 
 **What it is**
 
@@ -323,6 +361,8 @@ Supabase-backed audit execution: tables (audit_runs, phase_results, audit_findin
 
 ## Supabase Query Fallback Procedure
 
+Procedure This procedure is MANDATORY whenever querying Supabase for any audit data. Verify table existence: Call listtables to confirm the target table exists (exact name, case-sensitive). If the tab
+
 **Procedure**
 
 This procedure is MANDATORY whenever querying Supabase for any audit data.
@@ -334,6 +374,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 5. **If both attempts fail — STOP**: Do not attempt a third query. State the specific technical finding clearly (e.g., "table exists but is empty" or "no rows match criteria"). Offer alternatives: check a different table, check Supabase dashboard directly, or paste the data.
 
 ## Resume Failed Audit
+
+Clarifying questions What's the auditrunid? Which phase did it stop at? How to help Check audit_progress view in Supabase Identify the last successfully completed phase Resume from the next incomplete
 
 **Clarifying questions**
 
@@ -357,6 +399,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 
 ## Resume a Failed Audit
 
+Procedure Get the auditrunid from the user. Check audit_progress view in Supabase to see completed vs pending phases. Identify the last successfully completed phase. Resume from the next incomplete ph
+
 **Procedure**
 
 1. Get the audit_run_id from the user.
@@ -366,6 +410,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 5. If data was lost, re-run only the affected phase — do not restart the entire audit.
 
 ## Phase 7 — Content Deep Audit
+
+Procedure Verify all data collection phases (1-6) are complete in Supabase. Audit listing content against competitors: title, bullets, description, A+ Content. Audit image stack: hero image, lifestyle
 
 ### Procedure
 
@@ -377,6 +423,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 6. Save results to phase_results in Supabase.
 
 ## Content Deep Audit
+
+Clarifying questions Have all data collection phases (1-6) been completed? How to help Audit listing content against competitors: title, bullets, description, A+ Content Audit image stack: hero, lifes
 
 **Clarifying questions**
 
@@ -400,6 +448,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 
 ## Audit Rules Frameworks
 
+Clarifying questions Are you looking for the full list of 17 rules or a specific rule? Do you need help applying the scoring formula to specific actions? How to help Present the relevant audit rules E
+
 **Clarifying questions**
 
 - Are you looking for the full list of 17 rules or a specific rule?
@@ -418,6 +468,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 
 ## Phase 10 — Baseline Measurement
 
+Procedure Capture current baselines: BSR, keyword rankings, conversion rate, sessions, revenue. Define the 30-day measurement plan with specific check-in dates (Day 7, 14, 21, 30). Set up tracking for
+
 ### Procedure
 
 1. Capture current baselines: BSR, keyword rankings, conversion rate, sessions, revenue.
@@ -426,6 +478,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 4. Save baselines to audit_baselines in Supabase.
 
 ## 17 critical audit rules governing data interpretation and recommendations
+
+What it is 17 critical audit rules governing data interpretation and recommendations. Action scoring formula: Impact × Ease × Revenue Exposure (max 125). Tiering: Tier 1 (80+, do immediately), Tier 2
 
 **What it is**
 
@@ -454,6 +508,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 
 ## Brand Analytics Sqp
 
+Clarifying questions Do you have access to Brand Analytics / Search Query Performance data? What date range should I analyze? How to help Pull SQP data: keyword funnel metrics, click share, conversion
+
 **Clarifying questions**
 
 - Do you have access to Brand Analytics / Search Query Performance data?
@@ -475,6 +531,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 - Brand Analytics access is not available
 
 ## Start Audit
+
+Clarifying questions What ASIN do you want to audit? Which marketplace (US, UK, DE, etc.)? Do you have an existing audit run to resume, or is this new? How to help Call startaudit() in Supabase to cre
 
 **Clarifying questions**
 
@@ -498,6 +556,8 @@ This procedure is MANDATORY whenever querying Supabase for any audit data.
 - Supabase connection fails during audit initialization
 
 ## Phases 7-10 of the listing audit: Content Deep Audit (title, bullets, A+, images, video, Rufus/AI readiness), Synthesis & Diagnosis (cross-phase findings, traffic diagnosis framework), Prioritized Action Plan (Impact × Ease × Revenue Exposure scoring, tiering), and Baseline Measurement (BSR, rankings, conversion, sessions, revenue tracking)
+
+What it is Phases 7-10 of the listing audit: Content Deep Audit (title, bullets, A+, images, video, Rufus/AI readiness), Synthesis & Diagnosis (cross-phase findings, traffic diagnosis framework), Prio
 
 **What it is**
 
@@ -527,6 +587,8 @@ Phases 7-10 of the listing audit: Content Deep Audit (title, bullets, A+, images
 
 ## Cross Sell Repeat
 
+Clarifying questions Is the product eligible for Subscribe & Save? Do you sell complementary products? How to help Analyze market basket data for cross-sell opportunities Check repeat purchase pattern
+
 **Clarifying questions**
 
 - Is the product eligible for Subscribe & Save?
@@ -546,6 +608,8 @@ Phases 7-10 of the listing audit: Content Deep Audit (title, bullets, A+, images
 
 ## Action Plan
 
+Clarifying questions What's your timeline for implementing changes? Are there budget constraints? How to help Score each action using Impact × Ease × Revenue Exposure (max 125) Tier actions: Tier 1 (8
+
 **Clarifying questions**
 
 - What's your timeline for implementing changes?
@@ -563,6 +627,8 @@ Phases 7-10 of the listing audit: Content Deep Audit (title, bullets, A+, images
 - Do not guarantee specific revenue or ranking outcomes from actions
 
 ## Catalog Performance Scp
+
+Clarifying questions Is this a parent ASIN with child variations? What date range for SCP data? How to help Pull Search Catalog Performance data Identify problem child ASINs Calculate catalog-level KP
 
 **Clarifying questions**
 

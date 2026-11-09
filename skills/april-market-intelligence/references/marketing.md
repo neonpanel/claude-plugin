@@ -54,6 +54,8 @@
 
 ## Campaign management and performance overview
 
+What it is Campaign management and performance overview. Key objects Campaign Channel Audience How to help campaign performance campaign setup Clarifying questions channel vs campaign channel vs campa
+
 **What it is**
 
 Campaign management and performance overview.
@@ -112,6 +114,8 @@ Campaign management and performance overview.
 - setup blocked
 
 ## Marketing analytics and reporting
+
+What it is Marketing analytics and reporting. Key objects Metric Report Segment How to help kpi meaning report export Clarifying questions metric definition metric definition metricname reportname fil
 
 **What it is**
 

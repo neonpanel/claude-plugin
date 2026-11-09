@@ -2,6 +2,8 @@
 
 ## Po Data Validation
 
+How to help Check company exists and user has access Check SKU/ASIN exists in the specified company and marketplace Check forecast scenario exists and is assigned to the SKU Check lead time and safety
+
 **How to help**
 
 - Check company exists and user has access
@@ -24,6 +26,8 @@
 - Forecast scenario referenced by user doesn't exist in NeonPanel
 
 ## Phase 1 of PO planning: collecting all required inputs (identifier type, forecast scenario, planning parameters, scope) in a single structured request before making any tool calls
+
+What it is Phase 1 of PO planning: collecting all required inputs (identifier type, forecast scenario, planning parameters, scope) in a single structured request before making any tool calls. Key obje
 
 **What it is**
 
@@ -54,6 +58,8 @@ Phase 1 of PO planning: collecting all required inputs (identifier type, forecas
 
 ## Phase 2: Data Validation
 
+Procedure Once inputs are confirmed, validate each before running analysis tools. Check company exists and user has access. If user provided a parent ASIN: Trust their input. Do NOT call neonpanellist
+
 **Procedure**
 
 1. Once inputs are confirmed, validate each before running analysis tools.
@@ -72,6 +78,8 @@ Phase 1 of PO planning: collecting all required inputs (identifier type, forecas
 10. For multi-SKU families, validate each SKU independently.
 
 ## Phase 5: Forecast Scenario Mismatch Handling
+
+Procedure When the user requests a specific scenario but the SKU is using a different one, report the mismatch immediately: Provide step-by-step NeonPanel instructions: Go to NeonPanel → Inventory Pla
 
 **Procedure**
 
@@ -98,6 +106,8 @@ Impact on PO planning:
 5. If user chooses to proceed, clearly disclose which scenario is being used in the result presentation.
 
 ## Po Planning Intake
+
+Clarifying questions Is that identifier a parent ASIN, child ASIN, SKU, or product family code? Which forecast scenario should I use? (e.g., promoshift128growthv2, default, or current?) Should I use c
 
 **Clarifying questions**
 
@@ -128,6 +138,8 @@ Impact on PO planning:
 
 ## Phase 1: Intake & Clarification
 
+Procedure When a user says "plan POs for company X, marketplace Y, product Z", immediately ask for ALL of the following in a single structured request: Identifier clarity: Is the identifier a parent A
+
 **Procedure**
 
 1. When a user says "plan POs for company X, marketplace Y, product Z", immediately ask for ALL of the following in a single structured request:
@@ -139,6 +151,8 @@ Impact on PO planning:
 7. If the user provides partial info, ask for the remaining items in one follow-up — never spread across multiple exchanges.
 
 ## Phase 6 of PO planning: detecting and handling forecast scenario mismatches — when the user requests a specific scenario but the SKU is assigned a different one
+
+What it is Phase 6 of PO planning: detecting and handling forecast scenario mismatches — when the user requests a specific scenario but the SKU is assigned a different one. Key objects Current scenari
 
 **What it is**
 
@@ -165,6 +179,8 @@ Phase 6 of PO planning: detecting and handling forecast scenario mismatches — 
 - Not explaining the impact difference between scenarios
 
 ## Verified Facts
+
+Facts PO planning requires four validated inputs before any tool calls: identifier type, forecast scenario, planning parameters (lead time, safety stock, PO cadence, horizon), and scope. All intake cl
 
 **Facts**
 
@@ -193,6 +209,8 @@ Phase 6 of PO planning: detecting and handling forecast scenario mismatches — 
 
 ## Phase 3 of PO planning: executing tools in the correct order — (1) listInventoryItems, (2) inspect_inventory_sku_snapshot, (3) list_product_logistics_parameters, (4) list_po_placement_candidates
 
+What it is Phase 3 of PO planning: executing tools in the correct order — (1) listInventoryItems, (2) inspectinventoryskusnapshot, (3) listproductlogisticsparameters, (4) listpoplacementcandidates. Ke
+
 **What it is**
 
 Phase 3 of PO planning: executing tools in the correct order — (1) listInventoryItems, (2) inspect_inventory_sku_snapshot, (3) list_product_logistics_parameters, (4) list_po_placement_candidates.
@@ -217,6 +235,8 @@ Phase 3 of PO planning: executing tools in the correct order — (1) listInvento
 - Re-running the same tool with same params when it returns empty
 
 ## Phase 7 of PO planning: knowing when to escalate — data integrity issues, missing critical configuration, unexpected tool results, or user decisions required
+
+What it is Phase 7 of PO planning: knowing when to escalate — data integrity issues, missing critical configuration, unexpected tool results, or user decisions required. Key objects Data integrity iss
 
 **What it is**
 
@@ -244,6 +264,8 @@ Phase 7 of PO planning: knowing when to escalate — data integrity issues, miss
 
 ## Po Escalation
 
+Clarifying questions Can you describe what you're seeing that looks wrong? How to help Summarize all findings collected so far Explain the specific gap or issue clearly Present options with trade-offs
+
 **Clarifying questions**
 
 - Can you describe what you're seeing that looks wrong?
@@ -270,6 +292,8 @@ Phase 7 of PO planning: knowing when to escalate — data integrity issues, miss
 
 ## Phase 3: Tool Sequencing
 
+Procedure Execute tools in this order — adapting based on identifier type: If parent ASIN provided (preferred path): Step 1: supplychaininspectinventoryskusnapshot with parentasin: ["B0D45BYWQR"] — Re
+
 **Procedure**
 
 1. Execute tools in this order — adapting based on identifier type:
@@ -293,6 +317,8 @@ Phase 7 of PO planning: knowing when to escalate — data integrity issues, miss
 5. If any step fails with an error (not empty, but error), retry once. If it fails again, escalate.
 
 ## Phase 4: Result Presentation
+
+Procedure Present results in exactly 5 sections using this template: Always state a clear recommendation — never end with "Option 1 or Option 2?" without recommending one. Calculate days of supply two
 
 **Procedure**
 
@@ -347,6 +373,8 @@ Company [ID] | [Marketplace] Market | Parent ASIN: [Parent]
 
 ## Po Scenario Mismatch
 
+Clarifying questions Do you want me to proceed with the current scenario, or wait for you to apply the requested one? How to help Report the mismatch clearly: current scenario vs. requested scenario E
+
 **Clarifying questions**
 
 - Do you want me to proceed with the current scenario, or wait for you to apply the requested one?
@@ -371,6 +399,8 @@ Company [ID] | [Marketplace] Market | Parent ASIN: [Parent]
 
 ## Po Result Presentation
 
+How to help Present results in exactly 5 sections: (1) Current Inventory — available FBA, inbound, warehouse stock, WIP orders, total coverage; (2) Sales Forecast — current velocity, peak velocity, 30
+
 **How to help**
 
 - Present results in exactly 5 sections: (1) Current Inventory — available FBA, inbound, warehouse stock, WIP orders, total coverage; (2) Sales Forecast — current velocity, peak velocity, 30/60 day projections, scenario used; (3) Risk Assessment — days of supply FBA-only AND with inbound, status label; (4) PO Recommendation — quantity, timing, arrival window, rationale including safety stock multiplier and PO cadence; (5) Next Steps — actionable checklist
@@ -391,6 +421,8 @@ Company [ID] | [Marketplace] Market | Parent ASIN: [Parent]
 
 ## Po Tool Execution
 
+How to help Execute tools in strict order: (1) neonpanellistInventoryItems, (2) supplychaininspectinventoryskusnapshot, (3) supplychainlistproductlogisticsparameters, (4) supplychainlistpoplacementcan
+
 **How to help**
 
 - Execute tools in strict order: (1) neonpanel_listInventoryItems, (2) supply_chain_inspect_inventory_sku_snapshot, (3) supply_chain_list_product_logistics_parameters, (4) supply_chain_list_po_placement_candidates
@@ -410,6 +442,8 @@ Company [ID] | [Marketplace] Market | Parent ASIN: [Parent]
 - Same query returns different results on retry
 
 ## Phase 2 of PO planning: validating all inputs exist and are correctly configured before running analysis tools
+
+What it is Phase 2 of PO planning: validating all inputs exist and are correctly configured before running analysis tools. Checks SKU existence, scenario assignment, lead time, and safety stock. Key o
 
 **What it is**
 
@@ -439,6 +473,8 @@ Phase 2 of PO planning: validating all inputs exist and are correctly configured
 
 ## Phase 5 of PO planning: presenting results in a structured 5-section format — Current Inventory, Sales Forecast, Risk Assessment, PO Recommendation, and Next Steps
 
+What it is Phase 5 of PO planning: presenting results in a structured 5-section format — Current Inventory, Sales Forecast, Risk Assessment, PO Recommendation, and Next Steps. Key objects Current Inve
+
 **What it is**
 
 Phase 5 of PO planning: presenting results in a structured 5-section format — Current Inventory, Sales Forecast, Risk Assessment, PO Recommendation, and Next Steps.
@@ -466,6 +502,8 @@ Phase 5 of PO planning: presenting results in a structured 5-section format — 
 - Not calculating days of supply both ways (FBA-only and with inbound)
 
 ## Phase 6: Escalation
+
+Procedure Escalate when any of these conditions are met: Data integrity: SKU exists in one system but not another Missing critical config: No lead time AND no company default Unexpected results: Same
 
 **Procedure**
 

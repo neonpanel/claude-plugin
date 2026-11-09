@@ -2,6 +2,8 @@
 
 ## Client's responsibility to finalize Chart of Accounts, define accounting policy, connect accounting systems, and approve mappings and financial outputs
 
+What it is Client's responsibility to finalize Chart of Accounts, define accounting policy, connect accounting systems, and approve mappings and financial outputs. Key objects CoA finalization Account
+
 **What it is**
 
 Client's responsibility to finalize Chart of Accounts, define accounting policy, connect accounting systems, and approve mappings and financial outputs.
@@ -27,6 +29,8 @@ Client's responsibility to finalize Chart of Accounts, define accounting policy,
 - Not having accounting system credentials ready
 
 ## Client's ongoing responsibility to maintain accurate operational and financial data after go-live, including POs, freight invoices, inventory records, and structural changes
+
+What it is Client's ongoing responsibility to maintain accurate operational and financial data after go-live, including POs, freight invoices, inventory records, and structural changes. Key objects On
 
 **What it is**
 
@@ -55,6 +59,8 @@ Client's ongoing responsibility to maintain accurate operational and financial d
 
 ## Client's responsibility to enter or confirm per-unit costs for Amazon inventory in the Initial Amazon Inventory Project prepared by NeonPanel
 
+What it is Client's responsibility to enter or confirm per-unit costs for Amazon inventory in the Initial Amazon Inventory Project prepared by NeonPanel. Key objects Initial Amazon Inventory Project P
+
 **What it is**
 
 Client's responsibility to enter or confirm per-unit costs for Amazon inventory in the Initial Amazon Inventory Project prepared by NeonPanel.
@@ -80,6 +86,8 @@ Client's responsibility to enter or confirm per-unit costs for Amazon inventory 
 
 ## Post-Go-Live Support
 
+Procedure Inform the client that NeonPanel provides post-go-live monitoring and support. NeonPanel conducts health checks to ensure data is flowing correctly. Offer optimization guidance for: Forecast
+
 **Procedure**
 
 1. Inform the client that NeonPanel provides post-go-live monitoring and support.
@@ -92,6 +100,8 @@ Client's responsibility to enter or confirm per-unit costs for Amazon inventory 
 5. Explain ongoing client responsibilities (see Data Maintenance playbook).
 
 ## Verified Facts
+
+Facts NeonPanel processes, validates, and prepares Amazon-sourced data after connection — including warehouses, inventory, orders, fees, and shipments. NeonPanel handles duplicate SKU cleanup and cata
 
 **Facts**
 
@@ -113,6 +123,8 @@ Client's responsibility to enter or confirm per-unit costs for Amazon inventory 
 
 ## Chart of Accounts and Accounting Setup
 
+Procedure Ask the client whether they want to use NeonPanel's default Chart of Accounts or their own custom CoA. If using a custom CoA: explain that this requires reconfiguring service-account mapping
+
 **Procedure**
 
 1. Ask the client whether they want to use NeonPanel's default Chart of Accounts or their own custom CoA.
@@ -124,6 +136,8 @@ Client's responsibility to enter or confirm per-unit costs for Amazon inventory 
 7. Review and finalize all mappings before proceeding to dry-run.
 
 ## Client and NeonPanel responsibilities for Chart of Accounts finalization, service-account mapping, and accounting policy decisions during onboarding
+
+What it is Client and NeonPanel responsibilities for Chart of Accounts finalization, service-account mapping, and accounting policy decisions during onboarding. Key objects Chart of Accounts (CoA) Ser
 
 **What it is**
 
@@ -152,6 +166,8 @@ Client and NeonPanel responsibilities for Chart of Accounts finalization, servic
 
 ## Client and NeonPanel responsibilities for validating non-Amazon warehouse balances, in-production POs, on-the-water shipments, and inbound Amazon receiving data
 
+What it is Client and NeonPanel responsibilities for validating non-Amazon warehouse balances, in-production POs, on-the-water shipments, and inbound Amazon receiving data. Key objects Warehouse balan
+
 **What it is**
 
 Client and NeonPanel responsibilities for validating non-Amazon warehouse balances, in-production POs, on-the-water shipments, and inbound Amazon receiving data.
@@ -179,6 +195,8 @@ Client and NeonPanel responsibilities for validating non-Amazon warehouse balanc
 
 ## Dry-Run Testing
 
+Procedure Explain that dry-run is a test run of the full data flow — it is NOT automatic and requires active review. NeonPanel runs the dry-run and generates a validation report. Review the validation
+
 **Procedure**
 
 1. Explain that dry-run is a test run of the full data flow — it is NOT automatic and requires active review.
@@ -193,6 +211,8 @@ Client and NeonPanel responsibilities for validating non-Amazon warehouse balanc
 
 ## Amazon Inventory Cost Entry
 
+Procedure Direct the client to the Initial Amazon Inventory Project in NeonPanel. Explain that NeonPanel has pre-filled inventory quantities from Amazon, but per-unit costs must be entered by the clie
+
 **Procedure**
 
 1. Direct the client to the Initial Amazon Inventory Project in NeonPanel.
@@ -202,6 +222,8 @@ Client and NeonPanel responsibilities for validating non-Amazon warehouse balanc
 5. Have the client review and confirm all costs before proceeding.
 
 ## Go-Live Approval
+
+Procedure Confirm all dry-run discrepancies have been resolved. Confirm starting balances have been entered and verified. Present the go-live checklist to the client: Amazon data imported and validate
 
 **Procedure**
 
@@ -221,6 +243,8 @@ Client and NeonPanel responsibilities for validating non-Amazon warehouse balanc
 
 ## Service-Account Mapping
 
+Procedure Navigate to the Services catalog in NeonPanel. Review the auto-generated service list (Amazon services, Shopify services, landed cost services). For each service, verify the mapped Chart of
+
 **Procedure**
 
 1. Navigate to the Services catalog in NeonPanel.
@@ -231,6 +255,8 @@ Client and NeonPanel responsibilities for validating non-Amazon warehouse balanc
 6. Document any services that don't have a clear account mapping — these need client decision.
 
 ## Ongoing Data Maintenance (Client Responsibility)
+
+After go-live the client maintains the data: entering new POs, uploading freight invoices promptly, keeping inventory records current, and reporting structural changes.
 
 ### Procedure
 
@@ -245,6 +271,8 @@ Client and NeonPanel responsibilities for validating non-Amazon warehouse balanc
 
 ## Client Data Collection (Non-Amazon)
 
+The client provides all non-Amazon data: 3PL balances, open POs, in-transit shipments, and freight and customs invoices. Set a deadline — delays here delay the whole onboarding.
+
 ### Procedure
 
 1. Explain that the client is responsible for providing all non-Amazon data.
@@ -258,6 +286,8 @@ Client and NeonPanel responsibilities for validating non-Amazon warehouse balanc
 5. If the client is unsure what data to provide, walk through each category with examples.
 
 ## Responsibility Clarification (Who Does What)
+
+Framework for splitting onboarding work between NeonPanel and the client, with dry-run review and discrepancy resolution shared. When a task is ambiguous, clarify with the client.
 
 ### Procedure
 
@@ -275,6 +305,8 @@ roster — for which NeonaSphera agent owns a given request, follow the Agent Ro
 and Handoff Rules.
 
 ## Client's responsibility to provide all non-Amazon data: warehouse balances, PO details, shipment information, and landed cost inputs required for accurate onboarding
+
+What it is Client's responsibility to provide all non-Amazon data: warehouse balances, PO details, shipment information, and landed cost inputs required for accurate onboarding. Key objects Non-Amazon
 
 **What it is**
 
@@ -305,6 +337,8 @@ Client's responsibility to provide all non-Amazon data: warehouse balances, PO d
 
 ## Amazon Data Connection and Processing
 
+Procedure Confirm the client has Amazon Seller Central access and knows which marketplaces to connect. Guide the client through connecting their Amazon account in NeonPanel. Explain that NeonPanel wil
+
 **Procedure**
 
 1. Confirm the client has Amazon Seller Central access and knows which marketplaces to connect.
@@ -316,6 +350,8 @@ Client's responsibility to provide all non-Amazon data: warehouse balances, PO d
 7. Inform the client they will need to enter or confirm per-unit costs in the next phase.
 
 ## NeonPanel's responsibility for processing, validating, and preparing Amazon-sourced data after connection, including warehouses, inventory, orders, fees, and shipments
+
+What it is NeonPanel's responsibility for processing, validating, and preparing Amazon-sourced data after connection, including warehouses, inventory, orders, fees, and shipments. Key objects Amazon c
 
 **What it is**
 
@@ -347,6 +383,8 @@ NeonPanel's responsibility for processing, validating, and preparing Amazon-sour
 
 ## NeonPanel's ongoing support after go-live, including health checks, optimization, and guidance on forecasting, profitability analysis, and new channel/warehouse setup
 
+What it is NeonPanel's ongoing support after go-live, including health checks, optimization, and guidance on forecasting, profitability analysis, and new channel/warehouse setup. Key objects Health ch
+
 **What it is**
 
 NeonPanel's ongoing support after go-live, including health checks, optimization, and guidance on forecasting, profitability analysis, and new channel/warehouse setup.
@@ -376,6 +414,8 @@ NeonPanel's ongoing support after go-live, including health checks, optimization
 
 ## Operational Data Validation
 
+Procedure Explain the split responsibility: NeonPanel validates technical correctness (format, duplicates, references); the client validates business accuracy (correct quantities, costs, vendors). For
+
 **Procedure**
 
 1. Explain the split responsibility: NeonPanel validates technical correctness (format, duplicates, references); the client validates business accuracy (correct quantities, costs, vendors).
@@ -385,6 +425,8 @@ NeonPanel's ongoing support after go-live, including health checks, optimization
 5. Flag any discrepancies found during technical validation and ask the client to resolve business-side issues.
 
 ## NeonPanel and client responsibilities during dry-run testing, validation, approval, and the transition to live sync
+
+What it is NeonPanel and client responsibilities during dry-run testing, validation, approval, and the transition to live sync. Key objects Dry-run test Validation report Approval gate Go-live date Mo
 
 **What it is**
 

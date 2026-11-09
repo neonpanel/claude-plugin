@@ -2,6 +2,8 @@
 
 ## When and how to correct erroneous transactions — covering reversals, adjustments, and re-entry, with guidance on which method is appropriate for each scenario
 
+What it is When and how to correct erroneous transactions — covering reversals, adjustments, and re-entry, with guidance on which method is appropriate for each scenario. Key objects reversal adjustme
+
 **What it is**
 
 When and how to correct erroneous transactions — covering reversals, adjustments, and re-entry, with guidance on which method is appropriate for each scenario.
@@ -54,6 +56,8 @@ When and how to correct erroneous transactions — covering reversals, adjustmen
 
 ## Tool Execute Sql
 
+Clarifying questions Is this a read query or a write query? Which table or dataset are you targeting? How to help Use executesql for ad-hoc queries and data inspection For schema changes or bulk data
+
 **Clarifying questions**
 
 - Is this a read query or a write query?
@@ -69,6 +73,8 @@ When and how to correct erroneous transactions — covering reversals, adjustmen
 - Query would modify or delete production data without a confirmed backup
 
 ## Triage: User-Generated vs. Integration-Sourced Documents
+
+Procedure Run this check first whenever a sales document (invoice) or shipment is implicated in a discrepancy. Determine the source of the document: Integration-sourced (Amazon, Shopify, or other plat
 
 **Procedure**
 
@@ -95,6 +101,8 @@ Run this check **first** whenever a sales document (invoice) or shipment is impl
 
 ## How to Correct a Transaction Error
 
+Procedure Use this playbook to fix wrong dates, quantities, costs, or warehouse assignments without corrupting FIFO sequencing. Identify the error type: Wrong date → reversal + re-entry required Wrong
+
 **Procedure**
 
 Use this playbook to fix wrong dates, quantities, costs, or warehouse assignments without corrupting FIFO sequencing.
@@ -114,6 +122,8 @@ Use this playbook to fix wrong dates, quantities, costs, or warehouse assignment
 
 ## Tool Apply Migration
 
+Clarifying questions What migration are you trying to apply? Has the migration been tested in a staging environment first? How to help Confirm the migration script and target environment before execut
+
 **Clarifying questions**
 
 - What migration are you trying to apply?
@@ -130,6 +140,8 @@ Use this playbook to fix wrong dates, quantities, costs, or warehouse assignment
 
 ## Transaction Type Quick Reference
 
+Procedure | Transaction Type | Affects Quantity | Affects Cost | Generates COGS | Notes | |---|---|---|---|---| | Inbound Shipment | ✅ | ✅ (base cost) | ❌ | Brings units in at base cost from PO or pri
+
 **Procedure**
 
 | Transaction Type | Affects Quantity | Affects Cost | Generates COGS | Notes |
@@ -143,6 +155,8 @@ Use this playbook to fix wrong dates, quantities, costs, or warehouse assignment
 
 ## Verified Facts
 
+Facts An inbound shipment brings units into a warehouse at a base cost sourced from the originating PO or prior warehouse; a bill does not transfer cost independently — it adds capitalizable costs (fr
+
 **Facts**
 
 - An inbound shipment brings units into a warehouse at a base cost sourced from the originating PO or prior warehouse; a bill does not transfer cost independently — it adds capitalizable costs (freight, duties, etc.) to that shipment's existing base cost to form the final Landed Cost.
@@ -154,6 +168,8 @@ Use this playbook to fix wrong dates, quantities, costs, or warehouse assignment
 - Outbound shipments and invoices consume inventory and generate COGS; inbound shipments, transfers, and bills do not generate COGS on their own.
 
 ## A taxonomy of all transaction types in NeonPanel — what each one does, whether it affects quantity, cost, or both, and which warehouses are involved
+
+What it is A taxonomy of all transaction types in NeonPanel — what each one does, whether it affects quantity, cost, or both, and which warehouses are involved. Key objects inbound shipment outbound s
 
 **What it is**
 
@@ -211,6 +227,8 @@ A taxonomy of all transaction types in NeonPanel — what each one does, whether
 
 ## How to Read a Transaction Timeline for a SKU
 
+Procedure Use this playbook whenever investigating an L&F pull, unexpected COGS figure, or inventory discrepancy. Identify the SKU and intended warehouse under investigation. Export the full transacti
+
 **Procedure**
 
 Use this playbook whenever investigating an L&F pull, unexpected COGS figure, or inventory discrepancy.
@@ -229,6 +247,8 @@ Use this playbook whenever investigating an L&F pull, unexpected COGS figure, or
 ---
 
 ## How to read and interpret a full transaction timeline for a SKU in a given warehouse — the foundational skill used in all L&F and COGS investigations
+
+What it is How to read and interpret a full transaction timeline for a SKU in a given warehouse — the foundational skill used in all L&F and COGS investigations. Key objects transaction timeline SKU w
 
 **What it is**
 

@@ -59,6 +59,8 @@
 
 ## Stock Risk
 
+Clarifying questions Which warehouse or company? What is your risk threshold? How to help use supplychainliststockreplenishmentriskitems tool identify high-risk items provide mitigation recommendation
+
 **Clarifying questions**
 
 - Which warehouse or company?
@@ -81,6 +83,8 @@
 
 ## Replenishment Analysis
 
+Clarifying questions Which warehouse or company? What is your target service level? How to help use supplychainlistfbareplenishment_candidates tool identify at-risk items provide reorder recommendatio
+
 **Clarifying questions**
 
 - Which warehouse or company?
@@ -98,6 +102,8 @@
 - automatic reordering
 
 ## Metric Drilldown
+
+Clarifying questions Which metric or report are you looking at? Do you want the breakdown by SKU, category, or warehouse? What date range should I analyze? How to help ALWAYS drill down to the most gr
 
 **Clarifying questions**
 
@@ -125,6 +131,8 @@
 - Query returns errors or incomplete results
 
 ## Landed cost tracking, freight and duty allocation, and landed cost analytics
+
+What it is Landed cost tracking, freight and duty allocation, and landed cost analytics. Covers how additional costs (shipping, customs, duties) are allocated to inventory items. Key objects Landed co
 
 **What it is**
 
@@ -167,6 +175,8 @@ Landed cost tracking, freight and duty allocation, and landed cost analytics. Co
 
 ## Velocity Analysis
 
+Clarifying questions Which product or warehouse? What time period? How to help use supplychainanalyzesalesvelocity tool explain velocity trends provide demand insights reference velocity dashboard Don
+
 **Clarifying questions**
 
 - Which product or warehouse?
@@ -185,6 +195,8 @@ Landed cost tracking, freight and duty allocation, and landed cost analytics. Co
 
 ## Artifact Requests
 
+Accounting Artifact Requests Integration name Sync job ID and timestamp Bill/Invoice IDs Vendor name(s) Mapping export or chart of accounts export Screenshots: sync status, error message Date range an
+
 # Accounting Artifact Requests
 
 - Integration name
@@ -196,6 +208,8 @@ Landed cost tracking, freight and duty allocation, and landed cost analytics. Co
 - Date range and report export
 
 ## Landed Cost Analytics
+
+Clarifying questions Which warehouse or period? What metrics are you interested in? How to help explain landed cost dashboard guide on health metrics provide interpretation guidance reference analytic
 
 **Clarifying questions**
 
@@ -214,6 +228,8 @@ Landed cost tracking, freight and duty allocation, and landed cost analytics. Co
 - landed cost auto-calculates
 
 ## Account and category mapping
+
+What it is Account and category mapping. Key objects Account Category Mapping How to help map accounts category mismatch Clarifying questions Not understanding that mapping changes affect historical d
 
 **What it is**
 
@@ -240,6 +256,8 @@ Account and category mapping.
 
 ## Transaction Mapping
 
+Clarifying questions Which transaction type? (Inventory, Sales, Purchases) Is this for understanding or troubleshooting? How to help explain transaction mapping reference transaction map guide clarify
+
 **Clarifying questions**
 
 - Which transaction type? (Inventory, Sales, Purchases)
@@ -258,6 +276,8 @@ Account and category mapping.
 
 ## Agl Setup
 
+Clarifying questions Are you setting up AGL for the first time? Do you have the AGL vendor configured? How to help provide AGL setup steps confirm custom FBA freight services validate default AGL acco
+
 **Clarifying questions**
 
 - Are you setting up AGL for the first time?
@@ -275,6 +295,8 @@ Account and category mapping.
 - AGL auto-configures
 
 ## Starting Balances
+
+Clarifying questions Which warehouse or company? Do you have the balance data? How to help guide on balance entry confirm data verification validate totals provide review checklist Don't claim startin
 
 **Clarifying questions**
 
@@ -297,6 +319,8 @@ Account and category mapping.
 - balance discrepancies
 
 ## Sync Status
+
+Clarifying questions Which integration? (QBO or Xero) Do you have a sync job ID? What is the error message? How to help collect error message confirm last successful sync check integration status iden
 
 **Clarifying questions**
 
@@ -324,6 +348,8 @@ Account and category mapping.
 
 ## User Memory
 
+Clarifying questions What data do you want to store or retrieve? Is this for customer data or internal tracking? How to help use execute_sql tool for queries explain User Memory schema guide on data p
+
 **Clarifying questions**
 
 - What data do you want to store or retrieve?
@@ -346,6 +372,8 @@ Account and category mapping.
 
 ## Profit Analytics Beta
 
+Clarifying questions Are you using the beta feature? Which dashboard or metric? How to help explain beta feature scope guide on filters and settings reference KPI dashboard provide interpretation guid
+
 **Clarifying questions**
 
 - Are you using the beta feature?
@@ -363,6 +391,8 @@ Account and category mapping.
 - profit analytics is production-ready
 
 ## Bill Missing
+
+Clarifying questions What is the bill/invoice ID? Which vendor? Which warehouse or company? How to help confirm status in source system check Bill Info attachments verify shipment/order link identify
 
 **Clarifying questions**
 
@@ -389,6 +419,8 @@ Account and category mapping.
 
 ## Fifo Analytics
 
+Clarifying questions Which warehouse or period? What is the specific concern? How to help explain FIFO transaction tracking provide COGS quality metrics reference analytics dashboard guide on interpre
+
 **Clarifying questions**
 
 - Which warehouse or period?
@@ -410,6 +442,8 @@ Account and category mapping.
 - COGS discrepancies
 
 ## Bills, invoices, and payables
+
+What it is Bills, invoices, and payables. Key objects Bill Invoice Vendor How to help bill missing invoice missing Clarifying questions Confusing bills (payables) with invoices (receivables) bill vs i
 
 **What it is**
 
@@ -435,6 +469,8 @@ Bills, invoices, and payables.
 - vendor_name
 
 ## Accounting system connection and synchronization
+
+What it is Accounting system connection and synchronization. Key objects Connection Sync Job Ledger Snapshot How to help connect accounting sync accounting Clarifying questions Confusing sync errors w
 
 **What it is**
 
@@ -462,6 +498,8 @@ Accounting system connection and synchronization.
 
 ## Inventory Audit
 
+Clarifying questions Which warehouse or period? Are you auditing against 3PL or internal records? How to help explain audit process guide on reconciliation provide audit checklist reference audit guid
+
 **Clarifying questions**
 
 - Which warehouse or period?
@@ -484,6 +522,8 @@ Accounting system connection and synchronization.
 
 ## Metric Contributor / Breakdown Drilldown
 
+Procedure When a user asks about contributors, breakdowns, or what's driving a metric (e.g. "what are the biggest contributors to lost COGS?"): Identify the metric and date range. Confirm which metric
+
 **Procedure**
 
 When a user asks about contributors, breakdowns, or what's driving a metric (e.g. "what are the biggest contributors to lost COGS?"):
@@ -496,6 +536,8 @@ When a user asks about contributors, breakdowns, or what's driving a metric (e.g
 6. **Offer deeper analysis.** After presenting the breakdown, proactively offer to drill further (e.g. "Want me to look at the transaction history for any of these SKUs?").
 
 ## FIFO inventory valuation, COGS calculations, unit cost analysis, and inventory audits
+
+What it is FIFO inventory valuation, COGS calculations, unit cost analysis, and inventory audits. Covers how inventory costs flow using first-in-first-out methodology and how to audit inventory values
 
 **What it is**
 
@@ -542,6 +584,8 @@ FIFO inventory valuation, COGS calculations, unit cost analysis, and inventory a
 
 ## Mapping Errors
 
+Clarifying questions Which account or service? Which category is affected? Is this for Bills or another document? How to help request mapping export identify mismatch confirm correct mapping validate
+
 **Clarifying questions**
 
 - Which account or service?
@@ -565,6 +609,8 @@ FIFO inventory valuation, COGS calculations, unit cost analysis, and inventory a
 - mapping changes affect financials
 
 ## Financial reconciliation, revenue and COGS reporting, and verifying that totals match across systems
+
+What it is Financial reconciliation, revenue and COGS reporting, and verifying that totals match across systems. Covers profit analysis and cross-system data validation. Key objects Reconciliation rep
 
 **What it is**
 
@@ -617,6 +663,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 
 ## Chart Of Accounts
 
+Clarifying questions Are you importing from QBO/Xero or using NeonPanel default? How to help confirm CoA source explain service mapping requirements provide setup guidance Don't claim CoA changes don'
+
 **Clarifying questions**
 
 - Are you importing from QBO/Xero or using NeonPanel default?
@@ -632,6 +680,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 - CoA changes don't affect mappings
 
 ## Po Placement
+
+Clarifying questions Which vendor or supplier? What is your lead time? How to help use supplychainlistpoplacement_candidates tool identify candidates provide ordering guidance confirm quantities Don't
 
 **Clarifying questions**
 
@@ -651,6 +701,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 
 ## Revenue Reporting
 
+Clarifying questions Which period or company? What level of detail? How to help use neonpanel_getRevenueAndCogs tool provide revenue/COGS summary explain variance analysis guide on reporting Don't cla
+
 **Clarifying questions**
 
 - Which period or company?
@@ -668,6 +720,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 - revenue is automatic
 
 ## Integration Setup
+
+Clarifying questions Which accounting system? (QBO or Xero) Is this first-time setup? How to help provide integration steps confirm credentials validate connection test sync Don't claim automatic inte
 
 **Clarifying questions**
 
@@ -687,6 +741,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 - no setup required
 
 ## Auth
+
+Clarifying questions Which integration? (QBO or Xero) What is the exact error message? How to help collect timestamp request re-authentication confirm credentials validate token status Don't claim tok
 
 **Clarifying questions**
 
@@ -711,6 +767,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 - credentials compromised
 
 ## Verified Facts
+
+Facts NeonPanel integrates with QuickBooks Online and Xero for accounting workflows. QuickBooks Online integration exports data from NeonPanel to QBO; it does not sync journal entries back into NeonPa
 
 **Facts**
 
@@ -738,6 +796,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 
 ## Unit Costs
 
+Clarifying questions Which period or product? What is the intended use? How to help use cogsexportunit_costs tool provide cost export explain cost methodology guide on cost analysis Don't claim costs
+
 **Clarifying questions**
 
 - Which period or product?
@@ -755,6 +815,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 - costs are fixed
 
 ## Project Search
+
+Clarifying questions What is the project name or reference? How to help use searchneonpanelproject_url tool provide project link explain project scope
 
 **Clarifying questions**
 

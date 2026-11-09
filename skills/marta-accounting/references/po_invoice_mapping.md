@@ -2,6 +2,8 @@
 
 ## Looking up a purchase order by its reference number using NeonPanel tools
 
+What it is Looking up a purchase order by its reference number using NeonPanel tools. Involves finding the company, searching for the PO project, and retrieving linked records (shipments, bills). Key
+
 **What it is**
 
 Looking up a purchase order by its reference number using NeonPanel tools. Involves finding the company, searching for the PO project, and retrieving linked records (shipments, bills).
@@ -29,6 +31,8 @@ Looking up a purchase order by its reference number using NeonPanel tools. Invol
 
 ## Verified Facts
 
+Facts The PO-to-invoice mapping produces a formatted markdown document, not a legally binding invoice. PO lookup requires a reference number (e.g., 320250006) and uses the searchneonpanelprojecturl to
+
 **Facts**
 
 - The PO-to-invoice mapping produces a formatted markdown document, not a legally binding invoice.
@@ -41,6 +45,8 @@ Looking up a purchase order by its reference number using NeonPanel tools. Invol
 - The invoice output is markdown-formatted text suitable for copying, sharing, or converting to PDF externally.
 
 ## Lookup Po Details
+
+Clarifying questions What's the PO reference number? Which company should I search in? How to help Search for the PO using searchneonpanelproject_url Present the PO summary with linked records (shipme
 
 **Clarifying questions**
 
@@ -63,6 +69,8 @@ Looking up a purchase order by its reference number using NeonPanel tools. Invol
 
 ## Line Items
 
+Procedure | # | SKU | Description | Qty | Unit Price | Line Total | |---|-----|-------------|-----|------------|------------| | 1 | {sku} | {description} | {qty} | ${unitprice} | ${linetotal} | | 2 |
+
 **Procedure**
 
 | # | SKU | Description | Qty | Unit Price | Line Total |
@@ -73,6 +81,8 @@ Looking up a purchase order by its reference number using NeonPanel tools. Invol
 ---
 
 ## Totals
+
+Procedure | | | |---|---| | Subtotal | ${subtotal} | | Freight | ${freight} | | Duties | ${duties} | | Other Charges | ${other} | | Grand Total | ${grand_total} | ---
 
 **Procedure**
 
@@ -87,6 +97,8 @@ Looking up a purchase order by its reference number using NeonPanel tools. Invol
 ---
 
 ## Invoice Markdown Template
+
+Procedure Use this template structure when generating the invoice output. Adapt field names based on what the NeonPanel tools actually return — do NOT fabricate fields that weren't in the response. ``
 
 **Procedure**
 
@@ -107,6 +119,8 @@ Use this template structure when generating the invoice output. Adapt field name
 ---
 
 ## Mapping purchase order data from NeonPanel into a structured invoice/document format
+
+What it is Mapping purchase order data from NeonPanel into a structured invoice/document format. Covers field mapping (PO fields → invoice fields), line item formatting, totals calculation, and markdo
 
 **What it is**
 
@@ -135,6 +149,8 @@ Mapping purchase order data from NeonPanel into a structured invoice/document fo
 
 ## Handle Missing Data
 
+Procedure If the PO is not found, inform the user and ask them to verify the reference number and company. If line-item details are unavailable (tool returns only the PO summary), output a summary inv
+
 **Procedure**
 
 1. If the PO is not found, inform the user and ask them to verify the reference number and company.
@@ -143,6 +159,8 @@ Mapping purchase order data from NeonPanel into a structured invoice/document fo
 4. Never fill in placeholder values — if a field is missing, omit it or mark it as "N/A".
 
 ## Generate Invoice with Landed Costs
+
+Procedure Follow steps 1–6 from "Generate Invoice from Purchase Order" above. Call neonpanelgetInventoryLandedCost to retrieve landed cost data for the items. Optionally call neonpanelgetInventoryCogs
 
 **Procedure**
 
@@ -158,6 +176,8 @@ Mapping purchase order data from NeonPanel into a structured invoice/document fo
 5. Output the enriched invoice with the cost breakdown section appended.
 
 ## Enriching the invoice with additional cost data — landed costs, COGS, unit costs — pulled from NeonPanel's costing tools
+
+What it is Enriching the invoice with additional cost data — landed costs, COGS, unit costs — pulled from NeonPanel's costing tools. Key objects Landed cost COGS Unit cost Freight Duties Cost breakdow
 
 **What it is**
 
@@ -186,6 +206,8 @@ Enriching the invoice with additional cost data — landed costs, COGS, unit cos
 
 ## Po Invoice With Costs
 
+Clarifying questions What's the PO reference number? Should I include freight, duties, or all landed cost components? How to help Look up the PO via searchneonpanelprojecturl Pull inventory details vi
+
 **Clarifying questions**
 
 - What's the PO reference number?
@@ -212,6 +234,8 @@ Enriching the invoice with additional cost data — landed costs, COGS, unit cos
 
 ## Linked Records
 
+Procedure | Type | Reference | Status | Link | |------|-----------|--------|------| | Shipment | {shipmentref} | {status} | [Open]({url}) | | Bill | {billref} | {status} | [Open]({url}) | --- Generate
+
 **Procedure**
 
 | Type | Reference | Status | Link |
@@ -226,6 +250,8 @@ Enriching the invoice with additional cost data — landed costs, COGS, unit cos
 
 ## Generate Invoice from Purchase Order
 
+Procedure Get the PO reference number from the user (e.g., 320250006). If the company is ambiguous, ask which company to search in. Otherwise use the default/known company. Call searchneonpanelproject
+
 **Procedure**
 
 1. Get the PO reference number from the user (e.g., 320250006).
@@ -239,6 +265,8 @@ Enriching the invoice with additional cost data — landed costs, COGS, unit cos
 9. Offer to enrich with landed costs or COGS if the user wants more detail.
 
 ## Generate Po Invoice
+
+Clarifying questions What's the PO reference number? Which company is this PO from (if you have multiple)? Do you want just the basic invoice or should I include landed costs? How to help Search for t
 
 **Clarifying questions**
 

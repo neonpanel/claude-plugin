@@ -2,6 +2,8 @@
 
 ## Sku Lookup
 
+Clarifying questions Is that a parent ASIN, child ASIN, SKU code, or product family name? Which marketplace — US, UK, or another? How to help Use neonpanel_listInventoryItems to search for the identif
+
 **Clarifying questions**
 
 - Is that a parent ASIN, child ASIN, SKU code, or product family name?
@@ -24,6 +26,8 @@
 
 ## Check Inventory Position
 
+Clarifying questions Which SKU or ASIN are you checking? Which company and marketplace? How to help Run supplychaininspectinventorysku_snapshot to get current position Calculate days of supply FBA-onl
+
 **Clarifying questions**
 
 - Which SKU or ASIN are you checking?
@@ -45,6 +49,8 @@
 - Inventory snapshot data appears stale or contradictory
 
 ## Inventory Position
+
+Clarifying questions Which SKU or ASIN do you want inventory levels for? Do you want FBA-only or total inventory across all warehouses? How to help Use supplychaininspectinventorysku_snapshot to get c
 
 **Clarifying questions**
 
@@ -71,6 +77,8 @@
 
 ## Warehouse Check
 
+Clarifying questions Which company should I check? How to help Run neonpanel_listWarehouses for the company Check for clones (same name, different IDs) Identify AWD warehouses and flag that inventory
+
 **Clarifying questions**
 
 - Which company should I check?
@@ -92,6 +100,8 @@
 
 ## Verified Facts
 
+Facts A parent ASIN may map to multiple child ASINs and SKUs. Always resolve to specific SKUs before running inventory analysis. SKU lookup must specify both company ID and marketplace — the same SKU
+
 **Facts**
 
 - A parent ASIN may map to multiple child ASINs and SKUs. Always resolve to specific SKUs before running inventory analysis.
@@ -106,6 +116,8 @@
 - Warehouse type (FBA, AWD, 3PL, own) determines how inventory is managed and which replenishment rules apply.
 
 ## Sku Lookup Resolution
+
+Clarifying questions What identifier do you have — parent ASIN, child ASIN, or SKU code? Which marketplace? How to help If parent ASIN: go directly to supply chain tools (they resolve children automat
 
 **Clarifying questions**
 
@@ -127,6 +139,8 @@
 - SKU exists in one system but not another
 
 ## Inventory Position Check
+
+Clarifying questions Which company and SKU? How to help Run supplychaininspectinventorysku_snapshot for the SKU Break down: FBA available, inbound, warehouse stock, WIP orders, total coverage Calculat
 
 **Clarifying questions**
 
@@ -150,6 +164,8 @@
 - Inventory data appears inconsistent across sources
 
 ## Warehouse Types And Clones
+
+Clarifying questions Which company are you checking warehouses for? How to help Run neonpanel_listWarehouses to list all warehouses Group by name to detect clones (same name, different IDs) Identify A
 
 **Clarifying questions**
 

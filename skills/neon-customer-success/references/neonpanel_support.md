@@ -2,6 +2,8 @@
 
 ## Verified Facts
 
+Facts Supported bulk upload types are Inventory Orders, Bills, Shipments, Invoices, and Forecasts. NeonPanel uploads accept CSV files only. Each upload template contains an instruction sheet and an ex
+
 **Facts**
 
 - Supported bulk upload types are Inventory Orders, Bills, Shipments, Invoices, and Forecasts.
@@ -63,6 +65,8 @@
 
 ## Acct Agl Setup
 
+Clarifying questions Are you setting up AGL for the first time? Do you have the AGL vendor configured? How to help provide AGL setup steps confirm custom FBA freight services validate default AGL acco
+
 **Clarifying questions**
 
 - Are you setting up AGL for the first time?
@@ -80,6 +84,8 @@
 - AGL auto-configures
 
 ## Acct Inventory Audit
+
+Clarifying questions Which warehouse or period? Are you auditing against 3PL or internal records? How to help explain audit process guide on reconciliation provide audit checklist reference audit guid
 
 **Clarifying questions**
 
@@ -102,6 +108,8 @@
 - audit discrepancies
 
 ## Acct Auth
+
+Clarifying questions Which integration? (QBO or Xero) What is the exact error message? How to help collect timestamp request re-authentication confirm credentials validate token status Don't claim tok
 
 **Clarifying questions**
 
@@ -126,6 +134,8 @@
 - credentials compromised
 
 ## Account and category mapping — Chart of Accounts setup, category mapping rules, account codes, fixing mapping errors
+
+What it is Account and category mapping — Chart of Accounts setup, category mapping rules, account codes, fixing mapping errors. Key objects Chart of accounts Category mapping Account codes Mapping ru
 
 **What it is**
 
@@ -152,6 +162,8 @@ Account and category mapping — Chart of Accounts setup, category mapping rules
 
 ## Imp Warehouse Company Confirm
 
+Clarifying questions Which warehouse or company? What is the exact name? Is this for import or configuration? How to help validate against master list request confirmation proceed after confirmation D
+
 **Clarifying questions**
 
 - Which warehouse or company?
@@ -169,6 +181,8 @@ Account and category mapping — Chart of Accounts setup, category mapping rules
 - automatic name matching
 
 ## FIFO inventory valuation, COGS calculations, unit cost analysis, and inventory audits
+
+What it is FIFO inventory valuation, COGS calculations, unit cost analysis, and inventory audits. Covers how inventory costs flow using first-in-first-out methodology and how to audit inventory values
 
 **What it is**
 
@@ -215,6 +229,8 @@ FIFO inventory valuation, COGS calculations, unit cost analysis, and inventory a
 
 ## Management of SKU-level product data including attributes, variants, inventory mapping, and data quality
 
+What it is Management of SKU-level product data including attributes, variants, inventory mapping, and data quality. Key objects sku productvariant attributes inventorymapping data_quality barcode How
+
 **What it is**
 
 Management of SKU-level product data including attributes, variants, inventory mapping, and data quality.
@@ -238,6 +254,8 @@ Management of SKU-level product data including attributes, variants, inventory m
 
 ## Imp Removal Order
 
+Clarifying questions Is the Order Type 'Return'? Which warehouse is receiving? Do you have the file? How to help map to Shipment template confirm company and warehouse validate country provide mapping
+
 **Clarifying questions**
 
 - Is the Order Type 'Return'?
@@ -256,6 +274,8 @@ Management of SKU-level product data including attributes, variants, inventory m
 - automatic mapping
 
 ## Service catalog configuration — services, account mapping, and allocation base
+
+Configuring services (auto-generated, Amazon, custom, AGL), mapping them to accounts, and the allocation base that controls how a service's cost is split across items.
 
 ### What it is
 
@@ -296,6 +316,8 @@ Because the allocation base is a per-service setting, changing how a cost is spl
 
 ## Bulk catalog operations, data synchronization, import/export workflows, and catalog maintenance tasks
 
+What it is Bulk catalog operations, data synchronization, import/export workflows, and catalog maintenance tasks. Key objects bulkupdate importjob exportjob syncstatus catalogversion changelog How to
+
 **What it is**
 
 Bulk catalog operations, data synchronization, import/export workflows, and catalog maintenance tasks.
@@ -319,6 +341,8 @@ Bulk catalog operations, data synchronization, import/export workflows, and cata
 
 ## Acct Velocity Analysis
 
+Clarifying questions Which product or warehouse? What time period? How to help use supplychainanalyzesalesvelocity tool explain velocity trends provide demand insights reference velocity dashboard Don
+
 **Clarifying questions**
 
 - Which product or warehouse?
@@ -336,6 +360,8 @@ Bulk catalog operations, data synchronization, import/export workflows, and cata
 - velocity is static
 
 ## Data Import
+
+Procedure Template Request Symptom: User needs an import template. Checks: Identify the import type (Inventory Orders, Bills, Shipments, Invoices, Forecasts). Outcome: Provide the correct template ver
 
 **Procedure**
 
@@ -408,6 +434,8 @@ Bulk catalog operations, data synchronization, import/export workflows, and cata
 
 ## Acct Sync Status
 
+Clarifying questions Which integration? (QBO or Xero) Do you have a sync job ID? What is the error message? How to help collect error message confirm last successful sync check integration status iden
+
 **Clarifying questions**
 
 - Which integration? (QBO or Xero)
@@ -434,6 +462,8 @@ Bulk catalog operations, data synchronization, import/export workflows, and cata
 
 ## Acct Project Search
 
+Clarifying questions What is the project name or reference? How to help use searchneonpanelproject_url tool provide project link explain project scope
+
 **Clarifying questions**
 
 - What is the project name or reference?
@@ -445,6 +475,8 @@ Bulk catalog operations, data synchronization, import/export workflows, and cata
 - explain project scope
 
 ## Acct Chart Of Accounts
+
+Clarifying questions Are you importing from QBO/Xero or using NeonPanel default? How to help confirm CoA source explain service mapping requirements provide setup guidance Don't claim CoA changes don'
 
 **Clarifying questions**
 
@@ -461,6 +493,8 @@ Bulk catalog operations, data synchronization, import/export workflows, and cata
 - CoA changes don't affect mappings
 
 ## Creation, editing, and management of product listings across multiple sales channels and marketplaces
+
+What it is Creation, editing, and management of product listings across multiple sales channels and marketplaces. Key objects productlisting channel marketplace listingstatus title description images
 
 **What it is**
 
@@ -485,6 +519,8 @@ Creation, editing, and management of product listings across multiple sales chan
 - manage listings
 
 ## Service groups configuration — why service groups are essential, how to create and use them for organized reporting
+
+What it is Service groups configuration — why service groups are essential, how to create and use them for organized reporting. Key objects Service Group Service Grouping Logic How to help create serv
 
 **What it is**
 
@@ -525,6 +561,8 @@ Service groups configuration — why service groups are essential, how to create
 
 ## Acct Integration Setup
 
+Clarifying questions Which accounting system? (QBO or Xero) Is this first-time setup? How to help provide integration steps confirm credentials validate connection test sync Don't claim automatic inte
+
 **Clarifying questions**
 
 - Which accounting system? (QBO or Xero)
@@ -544,6 +582,8 @@ Service groups configuration — why service groups are essential, how to create
 
 ## Cat Product Returns
 
+Clarifying questions Which metric are you interested in? What time period? How to help reference Product Returns dashboard explain trend graph guide on refund rate analysis identify top contributors D
+
 **Clarifying questions**
 
 - Which metric are you interested in?
@@ -561,6 +601,8 @@ Service groups configuration — why service groups are essential, how to create
 - automatic return prevention
 
 ## Import setup and file requirements — template selection, file format, required fields
+
+What it is Import setup and file requirements — template selection, file format, required fields. Key objects Import Job Template File CSV Format How to help start import download template which templ
 
 **What it is**
 
@@ -588,6 +630,8 @@ Import setup and file requirements — template selection, file format, required
 
 ## Acct Starting Balances
 
+Clarifying questions Which warehouse or company? Do you have the balance data? How to help guide on balance entry confirm data verification validate totals provide review checklist Don't claim startin
+
 **Clarifying questions**
 
 - Which warehouse or company?
@@ -610,6 +654,8 @@ Import setup and file requirements — template selection, file format, required
 
 ## Acct Unit Costs
 
+Clarifying questions Which period or product? What is the intended use? How to help use cogsexportunit_costs tool provide cost export explain cost methodology guide on cost analysis Don't claim costs
+
 **Clarifying questions**
 
 - Which period or product?
@@ -628,6 +674,8 @@ Import setup and file requirements — template selection, file format, required
 
 ## Imp Multi File
 
+Clarifying questions Is the second file a template or reference? Which file is the source data? How to help confirm single source file validate template reference proceed with one source Don't claim m
+
 **Clarifying questions**
 
 - Is the second file a template or reference?
@@ -644,6 +692,8 @@ Import setup and file requirements — template selection, file format, required
 - multiple source files supported
 
 ## Inventory catalog management — the relationship between products and inventory, why both are needed, and how inventory records interact with product merge operations
+
+What it is Inventory catalog management — the relationship between products and inventory, why both are needed, and how inventory records interact with product merge operations. Key objects Inventory
 
 **What it is**
 
@@ -689,6 +739,8 @@ Inventory catalog management — the relationship between products and inventory
 
 ## Imp Partial
 
+Clarifying questions Which rows are missing? Do you have a reconciliation report? What was the expected row count? How to help request reconciliation report identify missing rows confirm expected coun
+
 **Clarifying questions**
 
 - Which rows are missing?
@@ -715,6 +767,8 @@ Inventory catalog management — the relationship between products and inventory
 
 ## Imp Validation Errors
 
+Clarifying questions Do you have the import job ID? What is the exact error message? Which rows are affected? How to help request validation report identify error rows suggest corrections confirm fix
+
 **Clarifying questions**
 
 - Do you have the import job ID?
@@ -739,6 +793,8 @@ Inventory catalog management — the relationship between products and inventory
 - financial impact
 
 ## Landed cost — how bills are distributed to inventory items
+
+How a bill linked to a document spreads its cost across all items in that document, proportionally by each service's allocation base (volume, weight, count, duty, amount).
 
 ### What it is
 
@@ -786,6 +842,8 @@ The allocation base is a property of the **service**, not of the bill — so if 
 
 ## Cat Services Setup
 
+Clarifying questions Which service type? (Amazon, custom, AGL) Is this for landed cost? How to help identify service type provide setup guidance confirm account mapping Don't claim services auto-gener
+
 **Clarifying questions**
 
 - Which service type? (Amazon, custom, AGL)
@@ -802,6 +860,8 @@ The allocation base is a property of the **service**, not of the bill — so if 
 - services auto-generate without configuration
 
 ## Acct Profit Analytics Beta
+
+Clarifying questions Are you using the beta feature? Which dashboard or metric? How to help explain beta feature scope guide on filters and settings reference KPI dashboard provide interpretation guid
 
 **Clarifying questions**
 
@@ -820,6 +880,8 @@ The allocation base is a property of the **service**, not of the bill — so if 
 - profit analytics is production-ready
 
 ## Imp Template
+
+Clarifying questions Which import type? (Inventory Orders, Bills, Shipments, Invoices, Forecasts) How to help identify import type provide template version confirm template structure explain instructi
 
 **Clarifying questions**
 
@@ -843,6 +905,8 @@ The allocation base is a property of the **service**, not of the bill — so if 
 - template corrupted
 
 ## Accounting system connection and synchronization — connecting QBO/Xero, sync status, sync errors, retry guidance
+
+What it is Accounting system connection and synchronization — connecting QBO/Xero, sync status, sync errors, retry guidance. Key objects Sync status Connection settings Sync errors Accounting platform
 
 **What it is**
 
@@ -872,6 +936,8 @@ Accounting system connection and synchronization — connecting QBO/Xero, sync s
 
 ## Bills, invoices, and payables — creating, viewing, tracking payments, due dates, vendor management
 
+What it is Bills, invoices, and payables — creating, viewing, tracking payments, due dates, vendor management. Key objects Bill Invoice Payment Vendor Due date How to help View bills Create an invoice
+
 **What it is**
 
 Bills, invoices, and payables — creating, viewing, tracking payments, due dates, vendor management.
@@ -899,6 +965,8 @@ Bills, invoices, and payables — creating, viewing, tracking payments, due date
 
 ## Validation and error handling during data imports — error messages, row-level issues, retry guidance
 
+What it is Validation and error handling during data imports — error messages, row-level issues, retry guidance. Key objects Validation Report Error Row Error Severity How to help import failed valida
+
 **What it is**
 
 Validation and error handling during data imports — error messages, row-level issues, retry guidance.
@@ -924,6 +992,8 @@ Validation and error handling during data imports — error messages, row-level 
 
 ## Acct Mapping Errors
 
+Clarifying questions Which account or service? Which category is affected? Is this for Bills or another document? How to help request mapping export identify mismatch confirm correct mapping validate
+
 **Clarifying questions**
 
 - Which account or service?
@@ -948,6 +1018,8 @@ Validation and error handling during data imports — error messages, row-level 
 
 ## Acct Transaction Mapping
 
+Clarifying questions Which transaction type? (Inventory, Sales, Purchases) Is this for understanding or troubleshooting? How to help explain transaction mapping reference transaction map guide clarify
+
 **Clarifying questions**
 
 - Which transaction type? (Inventory, Sales, Purchases)
@@ -965,6 +1037,8 @@ Validation and error handling during data imports — error messages, row-level 
 - transaction mapping is automatic
 
 ## Product catalog management — product introduction, product families, parent products, product merging, merge prerequisites, merge error messages (e.g
+
+What it is Product catalog management — product introduction, product families, parent products, product merging, merge prerequisites, merge error messages (e.g. 'Inventory exists'), and the distincti
 
 **What it is**
 
@@ -996,6 +1070,8 @@ Product catalog management — product introduction, product families, parent pr
 
 ## Acct User Memory
 
+Clarifying questions What data do you want to store or retrieve? Is this for customer data or internal tracking? How to help use execute_sql tool for queries explain User Memory schema guide on data p
+
 **Clarifying questions**
 
 - What data do you want to store or retrieve?
@@ -1017,6 +1093,8 @@ Product catalog management — product introduction, product families, parent pr
 - data privacy concerns
 
 ## Acct Metric Drilldown
+
+Clarifying questions Which metric or report are you looking at? Do you want the breakdown by SKU, category, or warehouse? What date range should I analyze? How to help ALWAYS drill down to the most gr
 
 **Clarifying questions**
 
@@ -1045,6 +1123,8 @@ Product catalog management — product introduction, product families, parent pr
 
 ## Imp Format Questions
 
+Clarifying questions Which import type? Which field or column? Do you have the template? How to help reference template instructions confirm field mapping validate format provide example Don't claim n
+
 **Clarifying questions**
 
 - Which import type?
@@ -1068,6 +1148,8 @@ Product catalog management — product introduction, product families, parent pr
 
 ## Acct Fifo Analytics
 
+Clarifying questions Which warehouse or period? What is the specific concern? How to help explain FIFO transaction tracking provide COGS quality metrics reference analytics dashboard guide on interpre
+
 **Clarifying questions**
 
 - Which warehouse or period?
@@ -1089,6 +1171,8 @@ Product catalog management — product introduction, product families, parent pr
 - COGS discrepancies
 
 ## Catalog Management
+
+Procedure Add a New Product Navigate to the Products section in NeonPanel. Click "Add Product" or "New Product". Enter the product name, SKU, and basic details. Assign the product to a Product Family
 
 **Procedure**
 
@@ -1195,6 +1279,8 @@ Product catalog management — product introduction, product families, parent pr
 
 ## Acct Stock Risk
 
+Clarifying questions Which warehouse or company? What is your risk threshold? How to help use supplychainliststockreplenishmentriskitems tool identify high-risk items provide mitigation recommendation
+
 **Clarifying questions**
 
 - Which warehouse or company?
@@ -1217,6 +1303,8 @@ Product catalog management — product introduction, product families, parent pr
 
 ## Acct Replenishment Analysis
 
+Clarifying questions Which warehouse or company? What is your target service level? How to help use supplychainlistfbareplenishment_candidates tool identify at-risk items provide reorder recommendatio
+
 **Clarifying questions**
 
 - Which warehouse or company?
@@ -1234,6 +1322,8 @@ Product catalog management — product introduction, product families, parent pr
 - automatic reordering
 
 ## Acct Revenue Reporting
+
+Clarifying questions Which period or company? What level of detail? How to help use neonpanel_getRevenueAndCogs tool provide revenue/COGS summary explain variance analysis guide on reporting Don't cla
 
 **Clarifying questions**
 
@@ -1253,6 +1343,8 @@ Product catalog management — product introduction, product families, parent pr
 
 ## Cat Products Intro
 
+Clarifying questions Is this a new product or updating existing? Do you need product families? How to help explain product structure reference product introduction guide confirm product family needs D
+
 **Clarifying questions**
 
 - Is this a new product or updating existing?
@@ -1269,6 +1361,8 @@ Product catalog management — product introduction, product families, parent pr
 - products auto-sync to inventory
 
 ## Financial reconciliation, revenue and COGS reporting, and verifying that totals match across systems
+
+What it is Financial reconciliation, revenue and COGS reporting, and verifying that totals match across systems. Covers profit analysis and cross-system data validation. Key objects Reconciliation rep
 
 **What it is**
 
@@ -1321,6 +1415,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 
 ## Acct Bill Missing
 
+Clarifying questions What is the bill/invoice ID? Which vendor? Which warehouse or company? How to help confirm status in source system check Bill Info attachments verify shipment/order link identify
+
 **Clarifying questions**
 
 - What is the bill/invoice ID?
@@ -1346,6 +1442,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 
 ## Acct Po Placement
 
+Clarifying questions Which vendor or supplier? What is your lead time? How to help use supplychainlistpoplacement_candidates tool identify candidates provide ordering guidance confirm quantities Don't
+
 **Clarifying questions**
 
 - Which vendor or supplier?
@@ -1363,6 +1461,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 - automatic PO creation
 
 ## Acct Landed Cost Analytics
+
+Clarifying questions Which warehouse or period? What metrics are you interested in? How to help explain landed cost dashboard guide on health metrics provide interpretation guidance reference analytic
 
 **Clarifying questions**
 
@@ -1382,6 +1482,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 
 ## Cat Product Families
 
+Clarifying questions Are you creating a new family or merging existing products? How many SKUs are involved? How to help explain product family purpose guide on parent product creation reference merge
+
 **Clarifying questions**
 
 - Are you creating a new family or merging existing products?
@@ -1398,6 +1500,8 @@ Financial reconciliation, revenue and COGS reporting, and verifying that totals 
 - product families are required
 
 ## Post-import reconciliation — verifying totals match, identifying missing rows, data mismatch resolution
+
+What it is Post-import reconciliation — verifying totals match, identifying missing rows, data mismatch resolution. Key objects Reconciliation Report Totals Missing Rows How to help data mismatch miss
 
 **What it is**
 
@@ -1444,6 +1548,8 @@ Post-import reconciliation — verifying totals match, identifying missing rows,
 
 ## Cat Service Account Mapping
 
+Clarifying questions Which service? Which account in Chart of Accounts? How to help confirm service and account provide mapping guidance validate Chart of Accounts Don't claim automatic service mappin
+
 **Clarifying questions**
 
 - Which service?
@@ -1460,6 +1566,8 @@ Post-import reconciliation — verifying totals match, identifying missing rows,
 - automatic service mapping
 
 ## Product Listings
+
+Procedure Update Product Listing Identify product by SKU, product ID, or name. Determine target sales channel(s) (Amazon, Shopify, eBay, etc.). Check current listing status (draft, active, inactive).
 
 **Procedure**
 
@@ -1495,6 +1603,8 @@ Post-import reconciliation — verifying totals match, identifying missing rows,
 
 ## Cat Merge Rules
 
+Clarifying questions Are you merging products/SKUs or merging warehouses? The rules are different. What is the exact error message you are seeing? Which SKUs or products are you trying to merge? How t
+
 **Clarifying questions**
 
 - Are you merging products/SKUs or merging warehouses? The rules are different.
@@ -1520,6 +1630,8 @@ Post-import reconciliation — verifying totals match, identifying missing rows,
 - Merge operation causes data loss or unexpected results
 
 ## Brands and vendors catalog management — adding brands, assigning brands to products, managing vendor lists
+
+What it is Brands and vendors catalog management — adding brands, assigning brands to products, managing vendor lists. Key objects Brand Vendor Brand Assignment Vendor List How to help add brand assig
 
 **What it is**
 
@@ -1560,6 +1672,8 @@ Brands and vendors catalog management — adding brands, assigning brands to pro
 - brands auto-assign
 
 ## Accounting
+
+Procedure Sync Failed Symptom: Accounting sync fails. Checks: Identify integration (QBO or Xero), collect error message. Confirm last successful sync timestamp. Check integration status and connection
 
 **Procedure**
 

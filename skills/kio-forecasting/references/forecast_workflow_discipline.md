@@ -2,6 +2,8 @@
 
 ## Rules for handling user-provided scenario names, labels, and formatting conventions
 
+What it is Rules for handling user-provided scenario names, labels, and formatting conventions. The agent must use the user's exact naming — never rename, relabel, or 'improve' user-provided identifie
+
 **What it is**
 
 Rules for handling user-provided scenario names, labels, and formatting conventions. The agent must use the user's exact naming — never rename, relabel, or 'improve' user-provided identifiers. After commits, attribution must include the scenario name, what was saved, and who it's attributed to.
@@ -27,6 +29,8 @@ Rules for handling user-provided scenario names, labels, and formatting conventi
 - Missing attribution details after commit
 
 ## Commit Forecast Data
+
+Clarifying questions What scenario name should this be saved under? Can you confirm the SKUs and date range included in this write? Should this overwrite the existing scenario or create a new version?
 
 **Clarifying questions**
 
@@ -55,6 +59,8 @@ Rules for handling user-provided scenario names, labels, and formatting conventi
 - User requests a write but variant count doesn't match expectations
 
 ## The step-by-step discipline for writing forecast data: audit current plan against actuals, show the gap, dry run the proposed write, get explicit user approval, commit to the live database, and summarize the audit trail
+
+What it is The step-by-step discipline for writing forecast data: audit current plan against actuals, show the gap, dry run the proposed write, get explicit user approval, commit to the live database,
 
 **What it is**
 
@@ -95,6 +101,8 @@ The step-by-step discipline for writing forecast data: audit current plan agains
 
 ## Audit Forecast Changes
 
+Clarifying questions Which scenario or time period do you want to review? Should I compare against actuals or a previous forecast version? How to help Retrieve the committed scenario data Show what wa
+
 **Clarifying questions**
 
 - Which scenario or time period do you want to review?
@@ -119,6 +127,8 @@ The step-by-step discipline for writing forecast data: audit current plan agains
 
 ## Audit Trail Review
 
+Procedure Identify the scope. Ask which scenario, time period, or SKU set the user wants to review. Retrieve committed data. Pull the saved scenario data including scenario name, save date, and attrib
+
 **Procedure**
 
 1. **Identify the scope.** Ask which scenario, time period, or SKU set the user wants to review.
@@ -128,6 +138,8 @@ The step-by-step discipline for writing forecast data: audit current plan agains
 5. **Flag discrepancies.** If committed data doesn't align with current actuals or expectations, highlight the gaps and ask if the user wants to investigate further.
 
 ## Verified Facts
+
+Facts Always compare proposed forecast adjustments against the current plan and actuals so the user sees the gap before approving changes. When saving forecast scenarios, use the exact name and format
 
 **Facts**
 

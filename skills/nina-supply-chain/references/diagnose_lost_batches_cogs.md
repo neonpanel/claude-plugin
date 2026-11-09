@@ -2,6 +2,8 @@
 
 ## Reference mapping of which NeonPanel tools and reports to use at each stage of the diagnostic process
 
+What it is Reference mapping of which NeonPanel tools and reports to use at each stage of the diagnostic process. Phase 1 uses cogsanalyzefifocogs (lostcogs mode) for COGS quality assessment. Phase 2
+
 **What it is**
 
 Reference mapping of which NeonPanel tools and reports to use at each stage of the diagnostic process. Phase 1 uses cogs_analyze_fifo_cogs (lost_cogs mode) for COGS quality assessment. Phase 2 uses cogs_list_lost_batches for comprehensive lost batch investigation across ALL transaction types including shipments. Per-SKU deep dives use neonpanel_getInventoryCogs and neonpanel_getInventoryDetails. Also covers Statement Analytics for Amazon anomalies, Landed Cost Analysis for cost propagation, Inventory Audit for balance verification, and search_neonpanel_project_url for finding specific documents.
@@ -34,6 +36,8 @@ Reference mapping of which NeonPanel tools and reports to use at each stage of t
 - Not understanding that cogs_list_lost_batches captures shipment-level lost batches that cogs_analyze_fifo_cogs does not surface
 
 ## Core concepts: what lost batches are (FIFO engine couldn't assign a source batch for outbound units), what lost COGS is (lost batches specifically on invoice/sale transactions resulting in $0 COGS), why FIFO is per-warehouse, and how same-date transaction priority works
+
+What it is Core concepts: what lost batches are (FIFO engine couldn't assign a source batch for outbound units), what lost COGS is (lost batches specifically on invoice/sale transactions resulting in
 
 **What it is**
 
@@ -84,6 +88,8 @@ Core concepts: what lost batches are (FIFO engine couldn't assign a source batch
 
 ## Warehouse Fork Assessment
 
+Clarifying questions What warehouse is shown on the lost COGS transaction? Is it Lost & Found or an actual warehouse name like Amazon FBA US? How to help If Lost & Found: stock was not on the selling
+
 **Clarifying questions**
 
 - What warehouse is shown on the lost COGS transaction?
@@ -102,6 +108,8 @@ Core concepts: what lost batches are (FIFO engine couldn't assign a source batch
 - Do not assume Lost & Found means the same thing as an actual warehouse showing $0 cost
 
 ## Aggregate Pattern Analysis
+
+Clarifying questions Do you want to look at all lost batches or filter by transaction type (invoices vs. shipments)? Is there a specific date range to focus on? How to help Pull lost batches sorted by
 
 **Clarifying questions**
 
@@ -122,6 +130,8 @@ Core concepts: what lost batches are (FIFO engine couldn't assign a source batch
 - Do not treat each lost batch as an independent problem without checking for shared causes
 
 ## Verified Facts
+
+Facts Lost COGS diagnosis has two entry points: 'I have lost COGS' starts at Phase 1 (COGS triage with the Warehouse Fork), while 'I have lost batches' starts directly at Phase 2 (general lost batches
 
 **Facts**
 
@@ -155,6 +165,8 @@ Core concepts: what lost batches are (FIFO engine couldn't assign a source batch
 
 ## Tool Selection Lost Cogs Vs Batches
 
+Clarifying questions Are you looking at lost COGS (sales with $0 cost) or lost batches in general (across all transaction types)? Do you need to include shipment-level lost batches in your investigati
+
 **Clarifying questions**
 
 - Are you looking at lost COGS (sales with $0 cost) or lost batches in general (across all transaction types)?
@@ -179,6 +191,8 @@ Core concepts: what lost batches are (FIFO engine couldn't assign a source batch
 - User reports that cogs_list_lost_batches is not returning expected data
 
 ## Phase 1 of the diagnostic skill: assessing overall COGS quality, identifying the worst offenders by SKU/brand/company, and applying the Warehouse Fork — the critical first diagnostic signal that determines the nature of the problem
+
+What it is Phase 1 of the diagnostic skill: assessing overall COGS quality, identifying the worst offenders by SKU/brand/company, and applying the Warehouse Fork — the critical first diagnostic signal
 
 **What it is**
 
@@ -208,6 +222,8 @@ Phase 1 of the diagnostic skill: assessing overall COGS quality, identifying the
 - Starting with individual SKUs instead of the aggregate view
 
 ## Phase 2 of the diagnostic skill: the aggregate-first investigation approach for all lost batches
+
+What it is Phase 2 of the diagnostic skill: the aggregate-first investigation approach for all lost batches. Uses cogslistlostbatches to pull ALL lost batches across all transaction types (invoices, s
 
 **What it is**
 
@@ -241,6 +257,8 @@ Phase 2 of the diagnostic skill: the aggregate-first investigation approach for 
 
 ## Diagnostic Tool Selection
 
+Clarifying questions Are you looking for lost COGS specifically or all lost batches? Do you need to investigate programmatically or via the UI reports? How to help For lost COGS (Phase 1): use FIFO Tr
+
 **Clarifying questions**
 
 - Are you looking for lost COGS specifically or all lost batches?
@@ -264,6 +282,8 @@ Phase 2 of the diagnostic skill: the aggregate-first investigation approach for 
 
 ## Tools & Reports Quick Reference
 
+Procedure | Tool / Report | When to Use | |---|---| | FIFO Transactions → COGS Quality tab | Identify lost COGS — sales with $0 cost assignment | | FIFO Transactions → Lost Batches tab | Identify all
+
 **Procedure**
 
 | Tool / Report | When to Use |
@@ -283,6 +303,8 @@ Phase 2 of the diagnostic skill: the aggregate-first investigation approach for 
 | `search_neonpanel_project_url` | Find specific POs, shipments, FBA shipments by name or reference number |
 
 ## Phase 2: Lost Batches General Investigation
+
+Procedure Start with the aggregate view — never individual SKUs first. Pull lost batches data using cogslistlost_batches. This tool captures ALL transaction types — invoices, shipments, adjustments, a
 
 **Procedure**
 
@@ -316,6 +338,8 @@ Phase 2 of the diagnostic skill: the aggregate-first investigation approach for 
 
 ## Behavioral guardrails for the diagnostic process: the guide-don't-prescribe principle (surface data and explain mechanics, but let the user make the final call on fixes), the exception for unambiguous cases, the hard limit (cannot detect absence of data never entered), and escalation rules for locked periods, systematic issues, and bulk operations
 
+What it is Behavioral guardrails for the diagnostic process: the guide-don't-prescribe principle (surface data and explain mechanics, but let the user make the final call on fixes), the exception for
+
 **What it is**
 
 Behavioral guardrails for the diagnostic process: the guide-don't-prescribe principle (surface data and explain mechanics, but let the user make the final call on fixes), the exception for unambiguous cases, the hard limit (cannot detect absence of data never entered), and escalation rules for locked periods, systematic issues, and bulk operations.
@@ -342,6 +366,8 @@ Behavioral guardrails for the diagnostic process: the guide-don't-prescribe prin
 - Assuming the system can detect data that was never entered
 
 ## Lost Batches Diagnosis
+
+Clarifying questions Which SKU(s) or inventory IDs are affected? What time period are the lost batches occurring in? Have you already identified any patterns (specific shipments, POs, warehouses)? How
 
 **Clarifying questions**
 
@@ -372,6 +398,8 @@ Behavioral guardrails for the diagnostic process: the guide-don't-prescribe prin
 
 ## Surrounding Transaction Analysis
 
+Clarifying questions Which specific SKU or inventory ID are we investigating? Do you have the transaction dates for the lost batch? How to help Check Lost & Found warehouse transactions for this item
+
 **Clarifying questions**
 
 - Which specific SKU or inventory ID are we investigating?
@@ -400,6 +428,8 @@ Behavioral guardrails for the diagnostic process: the guide-don't-prescribe prin
 
 ## Phase 2 Continued: Formulate Hypotheses & Guide the User
 
+Procedure Formulate hypotheses — with care. Only after examining the full transaction context. Possibilities include: Date ordering issue — inbound and outbound dates need correcting so inbound preced
+
 **Procedure**
 
 6. **Formulate hypotheses — with care.** Only after examining the full transaction context. Possibilities include:
@@ -420,6 +450,8 @@ Behavioral guardrails for the diagnostic process: the guide-don't-prescribe prin
 
 ## Phase 1: Lost COGS Triage
 
+Procedure Assess overall COGS quality. Use cogsanalyzefifocogs (analysismode: lost_cogs) to pull COGS quality data. Aggregate by SKU, brand, or company-wide depending on the user's scope. Surface the
+
 **Procedure**
 
 1. **Assess overall COGS quality.** Use `cogs_analyze_fifo_cogs` (analysis_mode: `lost_cogs`) to pull COGS quality data. Aggregate by SKU, brand, or company-wide depending on the user's scope.
@@ -431,6 +463,8 @@ Behavioral guardrails for the diagnostic process: the guide-don't-prescribe prin
 5. **This fork prevents misdiagnosis.** Without it, you might waste time looking for why stock didn't arrive when it did arrive — just without costs.
 
 ## Diagnostic Guidance Limits
+
+Clarifying questions Have you already attempted any fixes? If so, what did you try? Is the affected period locked? How to help Surface data, explain mechanics, and point the user in the right directio
 
 **Clarifying questions**
 
@@ -461,6 +495,8 @@ Behavioral guardrails for the diagnostic process: the guide-don't-prescribe prin
 
 ## Decision Flow Summary
 
+Procedure
+
 **Procedure**
 
 ```
@@ -489,6 +525,8 @@ User reports lost COGS or lost batches
 ```
 
 ## Lost Cogs Diagnosis
+
+Clarifying questions Do you want to check a specific SKU, brand, or the entire company? What time period are you concerned about? Do you have an investigation threshold — a minimum unit count or dolla
 
 **Clarifying questions**
 
