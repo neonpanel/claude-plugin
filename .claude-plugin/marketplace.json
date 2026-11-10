@@ -11,7 +11,7 @@
         "source": "github",
         "repo": "neonpanel/claude-plugin"
       },
-      "description": "E-commerce intelligence suite for Amazon sellers \u2014 8 specialist agents for operations, supply chain, marketing, accounting, forecasting, and financial analysis."
+      "description": "E-commerce intelligence for Amazon sellers \u2014 expertise skills for onboarding & data import, sales forecasting, replenishment, listing research, market intelligence, inventory & supply chain, accounting history and financial planning, connected to NeonPanel via MCP."
     }
   ]
 }

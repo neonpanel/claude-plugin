@@ -1,20 +1,21 @@
 # NeonPanel — Claude Cowork Plugin
 
-E-commerce intelligence suite for Amazon sellers. 8 specialist agents connected
-to NeonPanel's live data via MCP.
+E-commerce intelligence for Amazon sellers: one skill per NeonPanel expertise
+area, connected to NeonPanel's live data via MCP.
 
-## Agents / Skills
+## Expertise skills
 
-| Skill | Agent | Specialty |
-|-------|-------|-----------|
-| `neon-customer-success` | Neon | Onboarding, data import, accounting setup, go-live |
-| `dorian-replenishment` | Dorian | PO planning, inventory replenishment, reorder optimization |
-| `nina-supply-chain` | Nina | Supply chain analysis, logistics, inventory tracking |
-| `mark-marketing-research` | Mark | Amazon listing audit, optimization, compliance |
-| `marta-accounting` | Marta | P&L, general ledger, Amazon statements, reconciliation |
-| `kio-forecasting` | Kio | Sales forecasting, demand planning, scenario comparison |
-| `april-market-intelligence` | April | Competitive intelligence, keyword analysis, market trends |
-| `sanjay-financial-analyst` | Sanjay | Cash flow planning, financial projections, spending strategy |
+| Skill | Expertise | Covers |
+|-------|-----------|--------|
+| `onboarding-data-import` | Onboarding & data import | NeonPanel onboarding and platform operations: connecting Amazon/QuickBooks/Xero, data imports and templates, Chart of Accounts and service mapping, dry runs, go-live readiness, import or validation errors, and project creation or editing |
+| `sales-forecasting` | Sales forecasting | Forecasting and demand planning: sales forecasts, scenario comparison, forecast accuracy, statistical or seasonal forecasting, overrides, and projections |
+| `replenishment-planning` | Replenishment planning | Replenishment and purchase-order planning: reorder timing and quantities, days of supply, safety stock, lead times, stockout risk, FBA replenishment, and purchase-order candidates |
+| `listing-research` | Listing & marketing research | Amazon listing and marketing research: listing audits, title, bullet and image review, A+ content, compliance and quality, keyword research, competitor analysis, and listing conversion |
+| `market-intelligence` | Market intelligence | Market intelligence and Brand Analytics: keyword gaps, search-term momentum, competitive landscape, click or conversion share, keyword mining, category trends, BSR, and advertising performance |
+| `inventory-supply-chain` | Inventory & supply chain | Inventory operations and supply chain: stock location, warehouse balances, inbound FBA, shipments, lost batches, inventory transactions, landed-cost or COGS diagnosis, sales velocity, and arrival prediction |
+| `accounting-history` | Accounting history | Historical accounting: P&L, general ledger, journal entries, Amazon statement or settlement reconciliation, revenue and COGS, inventory valuation, unit costs, and bookkeeping sync |
+| `financial-planning` | Financial planning | Forward-looking finance: cash-flow planning, financial forecasts, budgets, spending strategy, profitability or margin improvement, cost optimization, and projections |
+| `neonpanel-plugin-setup` | Plugin setup | Installing the plugin and connecting the NeonPanel and NeonaSphera MCP servers |
 
 ## MCP Connection
 
@@ -61,7 +62,7 @@ release as the public repo, so both always carry the same version.
 ### Then set up
 
 Connect your NeonPanel account when Claude prompts for OAuth on first tool use.
-Skills activate automatically when your query matches their specialty. Ask Claude:
+Skills load automatically when your question matches an expertise area. Ask Claude:
 
 ```text
 Help me set up NeonPanel.
@@ -73,7 +74,7 @@ the two MCP connectors, which are set up differently:
 - NeonPanel MCP (`https://mcp.neonpanel.com/mcp`) — bundled with this plugin and
   configured automatically on install.
 - NeonaSphera MCP (`https://admin.neonasphera.com/mcp`) — optional; added manually
-  via Add Custom Connector (the onboarding skill walks you through it) for Shared
+  via Add Custom Connector (the setup skill walks you through it) for Shared
   Workspace, memory, and file-memory workflows. It is not auto-installed.
 
 > Note: plugins are supported in Claude Code and Cowork, but not in Claude Chat.
@@ -82,10 +83,11 @@ the two MCP connectors, which are set up differently:
 
 ## How It Works
 
-Each skill encodes the role definition, domain knowledge, routing logic, and tool
-playbooks from a trained NeonPanel agent. When you ask a question, Claude matches
-it to the most relevant skill and uses that agent's expertise + NeonPanel MCP tools
-to answer with live data.
+Each skill is one NeonPanel expertise area: its scope and boundaries, an operating
+playbook, and the knowledge-base articles, topics and tool guidance for that area.
+When you ask a question, Claude loads the matching expertise and uses its knowledge
+plus the NeonPanel MCP tools to answer with live data. Claude stays Claude; the
+skills add expertise, not a persona.
 
-Skills carry reference documents (playbooks, module maps, canonical claims) that
-provide detailed domain knowledge and step-by-step workflows.
+Detailed knowledge lives in each skill's `references/` folder and is indexed in
+`references/index.md`, so only what a question needs is read.
